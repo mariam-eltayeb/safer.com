@@ -39,6 +39,9 @@ a {
   padding-right: 25px;
   margin-right: 10px;
 }
+.main-wrapper a:hover {
+  color: white;
+}
 
 .main-wrapper ul li {
   list-style-type: none;
