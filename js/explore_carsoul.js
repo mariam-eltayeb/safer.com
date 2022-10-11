@@ -4,7 +4,7 @@ $('.explore_carsoul').slick({
     centerPadding: '0px',
     slidesToShow: 4,
     slidesToscroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
     responsive: [
@@ -15,6 +15,8 @@ $('.explore_carsoul').slick({
           arrows: true,
           centerMode: true,
           centerPadding: '0px',
+          autoplay: true,
+          autoplaySpeed: 2000,
           slidesToShow: 3
         }
       },
@@ -24,6 +26,8 @@ $('.explore_carsoul').slick({
               arrows: true,
               centerMode: true,
               centerPadding: '0px',
+              autoplay: true,
+              autoplaySpeed: 2000,
               slidesToShow: 2
             }
           },
@@ -33,6 +37,8 @@ $('.explore_carsoul').slick({
               arrows: true,
               centerMode: true,
               centerPadding: '0px',
+              autoplay: true,
+              autoplaySpeed: 2000,
               slidesToShow: 1
             }
           },

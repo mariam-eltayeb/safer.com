@@ -130,7 +130,6 @@
                       <a href="#">sign up</a>
                       </button>
                     </h2>
-                 
                   </div>
             </div>
           </div>
@@ -163,8 +162,7 @@
             </li>
             <div class="register">
               <ul>
-                <span> </span>
-                <span> <i class="fa-solid fa-user"></i></span>
+                <span class="line">  <i class="fa-solid fa-user"></i>  </span>
                 <li>
                   <a href = "#" class="links hybrid">sign in</a>
                 </li>
@@ -177,19 +175,351 @@
         </div>
           <!-- end of navigation links  -->
       </nav>
+
+      
     </div>
     
-      <!-- slider -->
+    <!-- slider -->
     <div class="slider_section">
         <div class="slider_details">
           <h1> the best way <br> to plan your  trip around the world   </h1>
           <p>there are endless  posibilities  when planning your ext vacation  so we are waiting  for you to use travelling</p> 
+          <div class="travel_box">
+            <ul class="nav travel_tabs nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">tours</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">travel</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="visa-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button" role="tab" aria-controls="visa" aria-selected="false">visa payment</button>
+                </li>
+              </ul>
+              <div class="tab-content travel_box_content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="hotel_details">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> destination</h5>
+
+                              <div class="choices">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>indonisia</option>
+                                  <option value="1">turkey </option>
+                                  <option value="2"> egypt</option>
+                                  <option value="3">Japan</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> check in <span>check </span> </h5>
+                               <div class="row mx-0">
+                                <div class="col-6 p-0">
+                                    <input type="date" id="start" name="trip-start"
+                                        value="2018-07-22"
+                                        min="2018-01-01" max="2018-12-31">
+                                </div>
+                                <div class="col-6">
+                                    <input type="date" id="end" name="trip-end"
+                                        value="2018-07-22"
+                                        min="2018-01-01" max="2018-12-31">
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> nights</h5>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2 </option>
+                                    <option value="2"> 3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> adults</h5>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2 </option>
+                                    <option value="2"> 3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> childs</h5>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2 </option>
+                                    <option value="2"> 3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <div class="main">
+                                    <div class="">
+                                        <a href="#">
+                                          <i class="fa-solid fa-circle-plus"></i>
+                                            Add room
+                                        </a>
+                                    </div>
+                                    <button class="btn">
+                                        <a href="#"> search</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="hotel_details">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-xl-2">
+                            <h5> destination</h5>
+
+                          <div class="choices">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>indonisia</option>
+                              <option value="1">turkey </option>
+                              <option value="2"> egypt</option>
+                              <option value="3">Japan</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-2">
+                            <h5> check in <span>check </span> </h5>
+                           <div class="row mx-0">
+                            <div class="col-6 p-0">
+                                <input type="date" id="start" name="trip-start"
+                                    value="2018-07-22"
+                                    min="2018-01-01" max="2018-12-31">
+                            </div>
+                            <div class="col-6">
+                                <input type="date" id="end" name="trip-end"
+                                    value="2018-07-22"
+                                    min="2018-01-01" max="2018-12-31">
+                            </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-2">
+                            <h5> nights</h5>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">2 </option>
+                                <option value="2"> 3</option>
+                                <option value="3">4</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-2">
+                            <h5> adults</h5>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">2 </option>
+                                <option value="2"> 3</option>
+                                <option value="3">4</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-2">
+                            <h5> childs</h5>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">2 </option>
+                                <option value="2"> 3</option>
+                                <option value="3">4</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-2">
+                            <div class="main">
+                                <div class="">
+                                    <a href="#">
+                                      <i class="fa-solid fa-circle-plus"></i>
+                                        Add room
+                                    </a>
+                                </div>
+                                <button class="btn">
+                                    <a href="#"> search</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                   <div class="hotel_details">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> destination</h5>
+
+                              <div class="choices">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>indonisia</option>
+                                  <option value="1">turkey </option>
+                                  <option value="2"> egypt</option>
+                                  <option value="3">Japan</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> check in <span>check </span> </h5>
+                               <div class="row mx-0">
+                                <div class="col-6 p-0">
+                                    <input type="date" id="start" name="trip-start"
+                                        value="2018-07-22"
+                                        min="2018-01-01" max="2018-12-31">
+                                </div>
+                                <div class="col-6">
+                                    <input type="date" id="end" name="trip-end"
+                                        value="2018-07-22"
+                                        min="2018-01-01" max="2018-12-31">
+                                </div>
+                               </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> nights</h5>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2 </option>
+                                    <option value="2"> 3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> adults</h5>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2 </option>
+                                    <option value="2"> 3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <h5> childs</h5>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>1</option>
+                                    <option value="1">2 </option>
+                                    <option value="2"> 3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-2">
+                                <div class="main">
+                                    <div class="">
+                                        <a href="#">
+                                          <i class="fa-solid fa-circle-plus"></i>
+                                            Add room
+                                        </a>
+                                    </div>
+                                    <button class="btn">
+                                        <a href="#"> search</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="visa-tab">
+                  <div class="hotel_details">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-12  col-sm-12">
+                                <h5> card number </h5>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" card number">
+                              </div>
+                            <div class="col-xl-3 col-md-6  col-sm-12">
+                                <h5>expiration date  </h5>
+                                <input type="date" id="start" name="trip-start">
+                            </div>
+                            <div class="col-xl-3 col-md-6  col-sm-12 ">
+                              <h5>CVN2 </h5>
+                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CVN2">
+                            </div>
+                      
+                            <div class="col-xl-2 col-md-12 col-sm-12">
+                                <div class="main">
+                                    <button class="btn">
+                                        <a href="#"> pay </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
         </div>
-      </div> 
+        </div>
+        
+    </div> 
   </section>
   <!-- explore turkey -->
   <section class="investigtion"> 
-    <div class="explore container">
+    <div class="explore explore_position container">
          <div class="row mx-0 explore_details ">
           <div class=" col-xl-2 col-md-12 col-sm-12">
             <div class="title">
@@ -204,7 +534,8 @@
                 <div class=" card">
                   <div class="card-body explore_card place_1 ">
                     <div class="header_info">
-                      <h5>turkey</h5>
+                     <h5><a href="#" class="stretched-link">turkey</a>
+                      </h5>
                       <span>896 properties</span>
                     </div>
                 </div> 
@@ -214,7 +545,8 @@
                 <div class=" card">
                   <div class="card-body explore_card place_2 ">
                     <div class="header_info">
-                      <h5>turkey</h5>
+                     <h5><a href="#" class="stretched-link">turkey</a>
+                      </h5>
                       <span>896 properties</span>
                     </div>
                 </div> 
@@ -224,7 +556,8 @@
                 <div class=" card">
                   <div class="card-body explore_card place_3 ">
                     <div class="header_info">
-                      <h5>turkey</h5>
+                     <h5><a href="#" class="stretched-link">turkey</a>
+                      </h5>
                       <span>896 properties</span>
                     </div>
                 </div> 
@@ -234,7 +567,8 @@
                 <div class=" card">
                   <div class="card-body explore_card place_4 ">
                     <div class="header_info">
-                      <h5>turkey</h5>
+                      <h5><a href="#" class="stretched-link">turkey</a>
+                      </h5>
                       <span>896 properties</span>
                     </div>
                 </div> 
@@ -244,7 +578,8 @@
                 <div class=" card">
                   <div class="card-body explore_card place_2 ">
                     <div class="header_info">
-                      <h5>turkey</h5>
+                      <h5><a href="#" class="stretched-link">turkey</a>
+                      </h5>
                       <span>896 properties</span>
                     </div>
                 </div> 
@@ -254,7 +589,8 @@
                 <div class=" card">
                   <div class="card-body explore_card place_4 ">
                     <div class="header_info">
-                      <h5>turkey</h5>
+                      <h5><a href="#" class="stretched-link">turkey</a>
+                      </h5>
                       <span>896 properties</span>
                     </div>
                 </div> 
@@ -277,6 +613,9 @@
             Lets Us Introduce an Unforgettable <br>
             Adventure Experience
           </h2>
+          <p>
+            Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip. Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip. Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.
+          </p>
           <div class="read">
             <a href="#">Read more 
               <i class="fa-solid fa-angle-right"></i>
@@ -284,13 +623,11 @@
             </a>
           </div>
          </div>
-          <p>
-            Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip. Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip. Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.
-          </p>
+         
          </div>
         </div>
       </div>
-      <!-- <img src="./images/homePage/birds.jpg" alt="birds image"> -->
+      <img src="./images/homePage/birds (2).png" alt="birds image">
     </div>
     <!-- <img src="./images/homePage/birds.png" alt="birds group"> -->
   </section>
@@ -338,7 +675,8 @@
                   <div class=" card">
                     <div class="card-body offers_card offer_place_1">
                       <div class="header_info">
-                        <h5>Istanbul</h5>
+                        <h5><a href="#" class="stretched-link">Istanbul</a>
+                        </h5>
                         <span>Dummy text ever since the 1500s, 
                         </span>
                         <span>
@@ -354,7 +692,8 @@
                   <div class=" card">
                     <div class="card-body offers_card offer_place_2">
                       <div class="header_info">
-                        <h5>Istanbul</h5>
+                      <h5><a href="#" class="stretched-link">Istanbul</a>
+                        </h5>
                         <span>Dummy text ever since the 1500s, 
                         </span>
                         <span>
@@ -371,7 +710,8 @@
                   <div class=" card">
                     <div class="card-body offers_card offer_place_3">
                       <div class="header_info">
-                        <h5>Istanbul</h5>
+                      <h5><a href="#" class="stretched-link">Istanbul</a>
+                        </h5>
                         <span>Dummy text ever since the 1500s, 
                         </span>
                         <span>
@@ -388,7 +728,8 @@
                   <div class=" card">
                     <div class="card-body offers_card offer_place_4">
                       <div class="header_info">
-                        <h5>Istanbul</h5>
+                      <h5><a href="#" class="stretched-link">Istanbul</a>
+                        </h5>
                         <span>Dummy text ever since the 1500s, 
                         </span>
                         <span>
@@ -492,7 +833,9 @@
                 <div class="card-body hotel_card_info">
                   <div class="card_info">
                     <h5>cairo hotel </h5>
+                   <a href="#">
                     <i class="fa-regular fa-heart"></i>
+                   </a>
                   </div>
                   <p>
                     Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
@@ -516,7 +859,9 @@
               <div class="card-body hotel_card_info">
                 <div class="card_info">
                   <h5>cairo hotel </h5>
-                  <i class="fa-regular fa-heart"></i>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                   </a>
                 </div>
                 <p>
                   Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
@@ -540,7 +885,9 @@
               <div class="card-body hotel_card_info">
                 <div class="card_info">
                   <h5>cairo hotel </h5>
-                  <i class="fa-regular fa-heart"></i>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                   </a>
                 </div>
                 <p>
                   Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
@@ -564,7 +911,9 @@
               <div class="card-body hotel_card_info">
                 <div class="card_info">
                   <h5>cairo hotel </h5>
-                  <i class="fa-regular fa-heart"></i>
+                  <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                   </a>
                 </div>
                 <p>
                   Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
@@ -584,7 +933,8 @@
       </div>
       </div>
     </div>
-    <!-- <img src="./images/homePage/birds.png" alt="birds group"> -->
+    <img src="./images/homePage/birds (2).png" alt="birds image">
+    <img src="./images/homePage/birds (2).png" alt="birds image">
     <img src="./images/homePage/slider-mask.png" alt="slider mask">
   </section>
   <!-- booking section -->
@@ -616,6 +966,35 @@
        </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="investigtion car">
+  <div class="adventure container">
+    <div class="row mx-0">
+      <div class=" col-xl-6 col- md-6 col-sm-12">
+       <div class="adventure_info">
+       <div class="heading">
+        <h2>
+          Book your car Transfer
+        </h2>
+        <p>
+          Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip. Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip. Adventure means learning. Bring new experiences from each journey. Meet different cultures, traditions and landscapes. Choose your next destination and start your trip.        </p>
+        <div class="read">
+          <a href="#">Read more 
+            <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+       </div>
+       
+       </div>
+      </div>
+      <div class=" col-xl-6 col- md-6 col-sm-12">
+        <img src="./images/homePage/group.jpg" alt="group image">
+      </div>
+    </div>
+    <img src="./images/homePage/birds (2).png" alt="birds image">
   </div>
 </section>
   <!-- footer -->
