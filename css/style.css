@@ -147,6 +147,29 @@ a {
 
 
 /* offcanvas styles  */
+.offcan_buttons {
+  background-color: transparent;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-bottom: 1PX solid rgba(128, 128, 128, 0.458) !important;
+}
+.offcan_buttons a {
+  padding-left: 0px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+.offcan_buttons:hover {
+  background-color: var(--main-color);
+
+}
+.offcan_buttons:hover a{
+  color: white ;
+}
 .navbar button {
   color:var(--text-color);
   border: none;
@@ -1625,6 +1648,8 @@ a:active,
 a:hover {
   outline: 0;
 }
+
+
 /* -------------------------------------------------------------------------------------------------------- */
 
 /* mega menu drop down  */
@@ -2085,6 +2110,8 @@ top: -4%;
    border-bottom-left-radius: 8px !important;
   }
 }
+
+
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
