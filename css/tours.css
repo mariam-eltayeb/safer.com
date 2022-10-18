@@ -1,0 +1,92 @@
+.fiter_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fiter_title>span {
+    font-size: 30px;
+    color: #210D3A;
+    text-transform:capitalize ;
+    font-weight: 800;
+}
+.fiter_title .filter span {
+    font-size: 20px;
+    color: #210D3A;
+}
+.fiter_title .filter .dropdown {
+    display: inline-block;
+ 
+}
+.fiter_title .filter .dropdown button{
+    background-color: transparent;
+    color: #210D3A;
+    border: none;
+}
+.hotels .hotels_card:hover{
+    transform: none;
+}
+.hotels .hotels_card .hotel_card_info {
+    background-color: white;
+}
+.filtrered_cards .tours_card img {
+   height: 370px;
+
+}
+.fiter_title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.filtrered_cards .tours_card h5{
+    color: #2B303C !important;
+}
+.filtrered_cards .tours_card .location span ,
+.filtrered_cards .tours_card .location i{
+    color: #7E7E7E !important;
+    text-transform: capitalize;
+    font-weight: 800 !important;
+}
+.filtrered_cards .tours_card .location span span {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.filtrered_cards .tours_card .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filtrered_cards .tours_card .price .rating {
+    display: flex;
+    align-items: center;
+}
+.filtrered_cards .tours_card .price .rating i {
+  color:#F97150 ;
+  font-size: 15px;
+
+}
+.filtrered_cards .tours_card .price .rating span {
+    font-size: 10px !important;
+    color: #7E7E7E !important;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.filtrered_cards .tours_card .price span {
+    color: #210D3A !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+}
+
+.page-link{
+    color: #210D3A !important;
+    font-size: 20px !important;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.page-item:first-child .page-link{
+    
+}
+.page-link:hover{
+    color: white !important;
+  background-color: #210D3A !important;
+}
