@@ -228,7 +228,7 @@ a {
   color:var(--main-color);
 }
 
-/* accrodion links  */
+/* accrodion links 
 .accordion-flush .accordion-item .accordion-button{
   background-color: var(--text-color);
   color:var(--main-color);
@@ -256,7 +256,7 @@ a {
 .accordion-flush .accordion-item .accordion-button i{
   position: absolute;
   right: 17px;
-}
+} */
 
 .offcanvas-body{
   padding: 0px;

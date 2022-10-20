@@ -1,3 +1,52 @@
+.filter_labels  {
+    margin-top:70px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+
+}
+.form-check {
+    margin-bottom: 6px;
+}
+.filter_labels label {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #210D3A;
+}
+.filter_labels h6 {
+    font-size:20px ;
+    color:#210D3A ;
+    text-transform: capitalize;
+    font-weight: 700;
+
+}
+.accordion-body {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+.accordion-item {
+    border: none;
+}
+.accordion .accordion-item .accordion-button {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-transform: capitalize;
+    font-size: 15px;
+    background-color: transparent;
+    border-bottom: 0px transparent;
+    box-shadow: none;
+    border: transparent;
+    color: #210D3A;
+    padding-bottom: 10px;
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #210D3A;
+}
+.rating i {
+    color: #F97150;
+}
 .fiter_title{
     display: flex;
     align-items: center;
@@ -23,6 +72,22 @@
     background-color: transparent;
     color: #210D3A;
     border: none;
+    text-transform: capitalize;
+    font-weight: 800;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.dropdown-toggle::after {
+    vertical-align: 0rem;
+}
+.fiter_title .filter .dropdown ul li a {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
 }
 .hotels .hotels_card:hover{
     transform: none;
@@ -37,6 +102,9 @@
 .fiter_title {
     margin-top: 40px;
     margin-bottom: 30px;
+}
+.filtrered_cards .tours_card{
+    box-shadow: 0px 3px 6px #00000029;
 }
 .filtrered_cards .tours_card h5{
     color: #2B303C !important;
@@ -76,17 +144,184 @@
     font-size: 22px !important;
     font-weight: 800 !important;
 }
-
+.pagination  {
+    margin-top: 30px;
+}
 .page-link{
     color: #210D3A !important;
     font-size: 20px !important;
     margin-right: 10px;
     border-radius: 10px;
+    border: 1px solid #210D3A;
+    padding: 6px 19px;
+}
+.page-link:focus {
+    box-shadow: none;
+    background-color: transparent;
 }
 .page-item:first-child .page-link{
-    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
 }
+.page-item:last-child .page-link {
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
 .page-link:hover{
     color: white !important;
   background-color: #210D3A !important;
+}
+.filtered_button {
+    background-color: #210D3A;
+    color: white !important;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+}
+.show {
+    display: inline-block !important;
+
+}
+.background {
+    background-color: white;
+    color: #210D3A !important;
+    border-color: #210D3A;
+}
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+  } */
+  
+  .middle {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .slider {
+    position: relative;
+    z-index: 1;
+    height: 10px;
+    margin: 0 15px;
+    width: 100%;
+  }
+  .slider > .track {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #08458664;
+  }
+  .slider > .range {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    right: 25%;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #084586;
+  }
+  .slider > .thumb {
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    background-color: #084586;
+    border-radius: 50%;
+  }
+  .slider > .thumb.left {
+    left: 25%;
+    transform: translate(-15px, -10px);
+  }
+  .slider > .thumb.right {
+    right: 25%;
+    transform: translate(15px, -10px);
+  }
+  
+  input[type="range"] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 2;
+    height: 10px;
+    width: 100%;
+    opacity: 0;
+    margin-bottom: 10px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    /* 겹쳐진 두 thumb를 모두 활성화 */
+    pointer-events: all;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    border: 0 none;
+    background-color: red;
+    cursor: pointer;
+  
+    /* appearance를 해야 위의 스타일들을 볼 수 있음 */
+    -webkit-appearance: none;
+  }
+
+@media (min-width: 992px){
+    .filter_labels {
+       position: static;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)  {
+   
+    .filtered_button{
+        display: block;
+        margin-top: 55px;
+    }
+    .left_filter {
+        position: relative;
+    }
+    .filter_labels {
+        display: none;
+       position: absolute;
+       top: 32px;
+       left: 0px; 
+       width: 90%;
+       z-index: 333;
+       background-color: white;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .fiter_title {
+        flex-direction: column;
+    }
+    .page-link {
+        margin-left: 5px;
+        padding: 5px 12px;
+    }
+    .filtered_button{
+        display: block;
+    }
+
+    .left_filter {
+        position: relative;
+    }
+    .filter_labels {
+        display: none;
+       position: absolute;
+       top: 0px;
+       left: 20px; 
+       width: 90%;
+       z-index: 333;
+       background-color: white;
+    }
 }

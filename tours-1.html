@@ -43,9 +43,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/tours.css">
+    <link rel="stylesheet" href="./css/tour-1.css">
     <!-- icon -->
     <link rel="icon" href="./images/homePage/logo.webp">
-    <title> Tours </title>
+    <title> Tours-1 </title>
 </head>
 <body>
      
@@ -158,36 +159,198 @@
   <!-- searching for tors section -->
     <section class="container">
         <div class="row mx-0">
-            <div class="col-md-3 left_filter">
-              <button class="btn filtered_button" onclick="openFilter()" id="filterButton">
+            <div class="col-md-3 left_filter ">
+              <!-- <button class="btn filtered_button" onclick="openFilter()" id="filterButton">
                 <i class="fa-solid fa-sliders"></i>    filter
-              </button>
-                <div class="filter_labels" id="filtered-menu">
+              </button> -->
+                <div class="categories ">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                categories
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                        hotels
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+                                        <label class="form-check-label" for="defaultCheck2">
+                                        rooms
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" >
+                                        <label class="form-check-label" for="defaultCheck3">
+                                        tours
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" >
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        transfer
+                                        </label>
+                                    </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="countires">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                               country
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" >
+                                  <label class="form-check-label" for="defaultCheck4">
+                                  Egypt
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" >
+                                  <label class="form-check-label" for="defaultCheck5">
+                                   turkey
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6" >
+                                  <label class="form-check-label" for="defaultCheck6">
+                                  Egypt
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" >
+                                  <label class="form-check-label" for="defaultCheck7">
+                                   turkey
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+                <div class="city">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                           city
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                    turkey 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" >
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        istanbul
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" >
+                                    <label class="form-check-label" for="defaultCheck4">
+                                        turkey 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" >
+                                    <label class="form-check-label" for="defaultCheck5">
+                                        istanbul
+                                    </label>
+                                </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rate_category">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingforth">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseforth" aria-expanded="false" aria-controls="flush-collapseforth">
+                               rating
+                              </button>
+                            </h2>
+                            <div id="flush-collapseforth" class="accordion-collapse collapse" aria-labelledby="flush-headingforth" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck12" >
+                                  <label class="form-check-label price" for="defaultCheck12">
+                                    <div class="rating">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                  </div>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck13" >
+                                  <label class="form-check-label" for="defaultCheck13">
+                                    <div class="rating">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                  </div>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck14" >
+                                  <label class="form-check-label" for="defaultCheck14">
+                                    <div class="rating">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                  </div>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck15" >
+                                  <label class="form-check-label" for="defaultCheck15">
+                                    <div class="rating">
+                                      <i class="fa-solid fa-star"></i>
+                                      <i class="fa-solid fa-star"></i>
+                                 
+              
+                                  </div>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck16" >
+                                  <label class="form-check-label" for="defaultCheck16">
+                                    <div class="rating">
+                                      <i class="fa-solid fa-star"></i>
+                                  </div>
+                                  </label>
+                                </div>
+                              </div>            
+                             </div>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- <div class="filter_labels" id="filtered-menu">
                   <h6> tour search </h6>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                     hotels
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
-                    <label class="form-check-label" for="defaultCheck2">
-                      rooms
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" >
-                    <label class="form-check-label" for="defaultCheck3">
-                     tours
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" >
-                    <label class="form-check-label" for="defaultCheck4">
-                     transfer
-                    </label>
-                  </div>
+                 
                   <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingOne">
@@ -322,33 +485,8 @@
                         </div>            
                        </div>
                     </div>
-                    <!-- <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingForth">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-colapseForth" aria-expanded="false" aria-controls="flush-colapseForth">
-                         range
-                        </button>
-                      </h2>
-                      <div id="flush-colapseForth" class="accordion-collapse collapse" aria-labelledby="flush-headingForth" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                          <div class="middle">
-                            <div class="multi-range-slider">
-                              <input type="range" id="input-left" min="0" max="100" value="25" />
-                              <input type="range" id="input-right" min="0" max="100" value="75" />
-                          
-                              <div class="slider">
-                                <div class="track"></div>
-                                <div class="range"></div>
-                                <div class="thumb left"></div>
-                                <div class="thumb right"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <span> 0 L.E - 1200 L.E</span>
-                        </div>            
-                       </div>
-                    </div> -->
                   </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-md-9">
                 <div class="fitered_data hotels">
@@ -605,8 +743,6 @@
     </section>  
 
 
-   
-
     <!--  ending page  -->
   <section class="ending">
     <div class="newsletter">
@@ -714,9 +850,6 @@
   <div class="copyright">
     <h6>All copyrights reserved to website 2021 </h6>
   </div>  
-
-    <script src="./js/range.js"></script>
-
     <!-- javascripts links -->
   <!-- bootstrap 5.0v scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
