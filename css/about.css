@@ -71,9 +71,9 @@ padding-top: 95px;
 .investigtion .adventure>img{
     top: -7%;
 }
-.statistics {
+/* .statistics {
     background-image: linear-gradient(rgba(33, 13, 58, 0.78),rgba(33, 13, 58, 0.78)) , url("./../images/homePage/statics_back.webp");
-}
+} */
 .obj_title {
     display: flex;
     align-items: center;
@@ -122,17 +122,15 @@ padding-top: 95px;
     top: -142px;
     left: 18%;
 }
-.newsletter button {
+/* .newsletter button {
     background-color: #FFE600;
     border-color: #FFE600;
     color: #210D3A;
 }
 footer .contact_details .contact_info i{
     color: #FFE600;
-}
-footer{
-    background-color: rgba(22, 7, 42, 0.47);
-}
+} */
+
 
 @media (min-width: 320px) and (max-width:991px) {
     .left::after{

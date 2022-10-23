@@ -204,14 +204,14 @@
   .middle {
     position: relative;
     width: 100%;
-    max-width: 500px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
   
   .slider {
     position: relative;
     z-index: 1;
-    height: 10px;
-    margin: 0 15px;
+    height: 5px;
     width: 100%;
   }
   .slider > .track {
@@ -223,6 +223,9 @@
     bottom: 0;
     border-radius: 5px;
     background-color: #08458664;
+  }
+  #flush-colapseForth{
+    width: 100%;
   }
   .slider > .range {
     position: absolute;
@@ -262,7 +265,6 @@
     margin-bottom: 10px;
   }
   input[type="range"]::-webkit-slider-thumb {
-    /* 겹쳐진 두 thumb를 모두 활성화 */
     pointer-events: all;
     width: 30px;
     height: 30px;
@@ -270,8 +272,6 @@
     border: 0 none;
     background-color: red;
     cursor: pointer;
-  
-    /* appearance를 해야 위의 스타일들을 볼 수 있음 */
     -webkit-appearance: none;
   }
 

@@ -1,0 +1,74 @@
+.hotel_details {
+    margin-top: 70px;
+}
+.hotels .hotels_card .hotel_card_info .card_info{
+    flex-direction: column;
+}
+.filtrered_cards .tours_card img {
+    max-height: 257px;
+}
+.hotels .hotels_card .hotel_card_info h5 {
+    margin-bottom: 20px;
+}
+.pagination {
+    margin-bottom: 40px;
+    padding-left: 12px;
+}
+.categories_section
+{
+    margin-top: 70px;
+}
+.categories_section h6 ,
+.latest_blog h6 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #210D3A;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.categories span {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #7E7E7E;
+}
+.blog_img img {
+    width: 100%;
+}
+.latest_blog  {
+    margin-top: 50px;
+}
+.blog_details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.blog_details img {
+    width: 125px;
+    margin-right: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.blog_details  .blog_info h6 {
+    color:#000000 ;
+    font-size:14px ;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.blog_details  .blog_info p {
+    color:#7E7E7E ;
+    font-size: 12px ;
+    margin-bottom: 10px;
+}
+.blog_details  .blog_info span {
+    color:#7E7E7E ;
+    font-size: 13px ;
+    text-transform: capitalize;
+}

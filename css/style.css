@@ -27,7 +27,7 @@ a {
 /*  mega menu */
 
 .main-wrapper {
-  background-color:var(--main-color);
+  background-color:#1C4482;
   min-height: 59px;
 }
 .main-wrapper img {
@@ -40,7 +40,7 @@ a {
   margin-right: 10px;
 }
 .main-wrapper a:hover {
-  color: #FFE600;
+  color: #68C2E5;
 }
 
 .main-wrapper ul li {
@@ -685,7 +685,7 @@ z-index: 0;
   text-transform: capitalize;
   margin-right: 5px;
   font-size: 18px;
-  color:#1C4482 ;
+  color:#68C2E5 ;
   font-weight: 800;
   letter-spacing: 3px;
 }
@@ -811,23 +811,23 @@ z-index: 0;
 
 }
 .offers_details .adventure_mind .header_info button {
-  border: 1px solid #FFE600;
+  border: 1px solid #FFFFFF;
   background-color: transparent;
   margin: auto;
   display: inherit;
 
 }
 .offers_details .adventure_mind .header_info button:hover {
-  background-color: #FFE600;
+  background-color:white;
 }
 .offers_details .adventure_mind .header_info button:hover a{
-  color: white;
+  color: #68C2E5;
 } 
 .offers_details .adventure_mind .header_info button a {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
-  color:#FFE600 ;
+  color:#FFFFFF ;
   padding:5px 10px
 }
 .offers_details .offers_card .header_info h5 a {
@@ -842,7 +842,7 @@ z-index: 0;
 }
 .offers_details .offers_card .header_info span:nth-of-type(1),
 .offers_details .offers_card .header_info span:nth-of-type(2){
-  font-size: 13px;
+  font-size: 19px;
   font-weight: 500;
   color:white;
   display: block;
@@ -1124,7 +1124,7 @@ font-weight: 800;
 .booking .right_side .heading a {
   font-size: 18px;
   font-weight: 300;
-  color:#FFE600;
+  color:#68C2E5;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
@@ -1299,7 +1299,7 @@ background-color: transparent;
 
 /*  ending page */
 .ending{
-  background-image: linear-gradient(rgba(36, 10, 67, 0.87),rgba(36, 10, 67, 0.87)) , url("./../images/homePage/statics_back.webp");
+  background-image: linear-gradient(rgba(104, 194, 229, 0.8),rgba(104, 194, 229, 0.8)) , url("./../images/homePage/statics_back.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1312,7 +1312,7 @@ background-color: transparent;
 }
 .newsletter span{
   font-size: 30px;
-  color: white;
+  color: #02265F;
   line-height: 1.5;
   margin-bottom: 10px ;
   display: inline-block;
@@ -1334,8 +1334,8 @@ background-color: transparent;
   position: relative;
 }
 .newsletter button {
-  background-color: #68C2E5;
-  border-color: #68C2E5;
+  background-color: #02265F;
+  border-color: #02265F;
   border-radius:8px;
   position: absolute;
   right: 0px;
@@ -1346,11 +1346,14 @@ background-color: transparent;
 }
 .btn-outline-secondary:hover{
   color: white;
-  background-color: #68C2E5;
-  border-color: #68C2E5;
+  background-color: #02265F;
+  border-color: #02265F;
 }
+/* .newsletter button:hover a{
+  color: #02265F;
+} */
 .newsletter button a{
- color: #02265F;
+ color: white;
  font-size: 19px;
 }
 .newsletter p {
@@ -1362,10 +1365,11 @@ background-color: transparent;
 footer{
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color:rgba(2, 38, 95, 0.62);
+  background-color:#121f43;
   color:var(--text-color);
   position: relative;
   overflow: hidden;
+  z-index: 8;
 }
 
 footer h6 {
