@@ -7,8 +7,13 @@
 .filtrered_cards .tours_card img {
     max-height: 257px;
 }
-.hotels .hotels_card .hotel_card_info h5 {
+.hotels .hotels_card .hotel_card_info h5 a {
     margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2B303C;
+    display: inline-block;
 }
 .pagination {
     margin-bottom: 40px;
@@ -47,6 +52,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
 }
 .blog_details img {
     width: 125px;
@@ -55,7 +61,7 @@
     border-bottom-left-radius: 10px;
 
 }
-.blog_details  .blog_info h6 {
+.blog_details  .blog_info h6 a {
     color:#000000 ;
     font-size:14px ;
     font-weight: 400;
@@ -72,3 +78,42 @@
     font-size: 13px ;
     text-transform: capitalize;
 }
+.blog_section {
+    position: relative;
+    background-color: transparent;
+}
+
+.filtered_button {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+.show
+{
+    display: inline-block;
+}
+
+
+@media (max-width: 1200px) and (min-width: 320px) {
+    .categories_section {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: white;
+        width: 85%;
+        padding: 30px;
+        display: none;
+    }
+    .filtered_button {
+    margin-top: 30px;
+    display: inline-block;
+    }
+    .pagination {
+        padding-left: 0px;
+    }
+    .page-item:last-child .page-link{
+        padding-left: 19px;
+        padding-right: 19px;
+
+    }
+} 

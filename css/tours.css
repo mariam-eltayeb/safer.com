@@ -1,4 +1,4 @@
-.filter_labels  {
+/* .filter_labels  {
     margin-top:70px;
     padding: 20px;
     box-shadow: 0px 3px 6px #00000029;
@@ -174,7 +174,7 @@
 .page-link:hover{
     color: white !important;
   background-color: #210D3A !important;
-}
+} */
 .filtered_button {
     background-color: #210D3A;
     color: white !important;
@@ -191,90 +191,30 @@
     color: #210D3A !important;
     border-color: #210D3A;
 }
-/* body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e5e5;
-  } */
-  
-  .middle {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 30px;
-  }
-  
-  .slider {
-    position: relative;
-    z-index: 1;
-    height: 5px;
-    width: 100%;
-  }
-  .slider > .track {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: 5px;
-    background-color: #08458664;
-  }
-  #flush-colapseForth{
-    width: 100%;
-  }
-  .slider > .range {
-    position: absolute;
-    z-index: 2;
-    left: 25%;
-    right: 25%;
-    top: 0;
-    bottom: 0;
-    border-radius: 5px;
-    background-color: #084586;
-  }
-  .slider > .thumb {
-    position: absolute;
-    z-index: 3;
-    width: 30px;
-    height: 30px;
-    background-color: #084586;
-    border-radius: 50%;
-  }
-  .slider > .thumb.left {
-    left: 25%;
-    transform: translate(-15px, -10px);
-  }
-  .slider > .thumb.right {
-    right: 25%;
-    transform: translate(15px, -10px);
-  }
-  
-  input[type="range"] {
-    position: absolute;
-    pointer-events: none;
-    -webkit-appearance: none;
-    z-index: 2;
-    height: 10px;
-    width: 100%;
-    opacity: 0;
-    margin-bottom: 10px;
-  }
-  input[type="range"]::-webkit-slider-thumb {
-    pointer-events: all;
-    width: 30px;
-    height: 30px;
-    border-radius: 0;
-    border: 0 none;
-    background-color: red;
-    cursor: pointer;
-    -webkit-appearance: none;
-  }
 
+.search_tours {
+    box-shadow: 0px 7px 20px #00000029;
+    padding: 20px;
+    margin-top: 50px;
+}
+.search_tours h6 {
+    font-size:20px;
+    color: #1C4482;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+.search_tours label  {
+    font-size: 15px;
+    color: #1C4482;
+    text-transform: capitalize;
+}
+.form-control, .form-select {
+    color: #7E7E7E !important;
+    font-size: 12px !important;
+    text-transform: capitalize;
+}
 @media (min-width: 992px){
     .filter_labels {
        position: static;
