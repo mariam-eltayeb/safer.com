@@ -156,8 +156,11 @@
   </section>
   <section class="tours container">
     <div class="row mx-0">
-        <div class="col-sm-12 col-md-3">
-            <div class="search_tours">
+        <div class="  col-sm-0 col-xl-3">
+          <button class="btn filtered_button" onclick="openFilter()" id="filterButton">
+            <i class="fa-solid fa-sliders"></i>   search tours 
+          </button> 
+            <div class="search_tours" id="filtered-menu">
                 <h6> search tours </h6>
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">country</label>
@@ -200,12 +203,756 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-12 col-xl-9">
+          <div class="filtered_hotels">
+            <div class="filters">
+              <span> 1051 hotels in istanbul</span>
+              <div class="left_filter">
+                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Recommended </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> by price</button>
+                  </li>
+                </ul>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   alphabitic
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">A</a></li>
+                    <li><a class="dropdown-item" href="#">B</a></li>
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EUR
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                    <li><a class="dropdown-item" href="#">LE</a></li>
+                    <li><a class="dropdown-item" href="#">USA</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col-sm-12 p-0">
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active w-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-1.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="tab-pane fade w-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-1.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+                  <div class="card-content">
+                    <div class=" card setted_tour_cards ">
+                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card-body  setted_info">
+                        <div class="card_info">
+                            <h6> Venice, Rome and Milan – 9 Days 8</h6>
+                            <span>
+                              $ 140 
+                            </span>
+                        </div>
+                        <span>     <i class="fa-solid fa-location-dot"></i>  duration 4 hours </span>
+                        <p>
+                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                        </p>
+                        <div class="booking_info">
+                          <span>
+                            set in coach 
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                        <div class="booking_info">
+                          <span>
+                            private
+                          </span>
+                          <span> 
+                            Entertainments
+                          </span>
+                          <div class="cancelation">
+                            <span> Adult-2</span>
+                            <span> <a href="#">
+                              cancelation policy
+                            </a></span>
+                          </div>
+                          <span>
+                            140 EUR
+                          </span>
+                          <button> 
+                            <a href="#" class="btn"> book</a>
+                          </button>
+                        </div>
+                      </div> 
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+             
+            </div>
+            <nav aria-label="Page navigation page_pagination example">
+              <ul class="pagination ">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
     </div>
   </section>
 
-
-
-    <!--  ending page  -->
+  <!--  ending page  -->
   <section class="ending">
     <div class="newsletter">
       <div class="container">

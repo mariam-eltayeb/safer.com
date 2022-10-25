@@ -144,7 +144,11 @@
     font-size: 22px !important;
     font-weight: 800 !important;
 }
-.pagination  {
+ */
+ 
+ /* pagination styles */
+
+ .pagination  {
     margin-top: 30px;
 }
 .page-link{
@@ -174,7 +178,8 @@
 .page-link:hover{
     color: white !important;
   background-color: #210D3A !important;
-} */
+}
+
 .filtered_button {
     background-color: #210D3A;
     color: white !important;
@@ -191,7 +196,9 @@
     color: #210D3A !important;
     border-color: #210D3A;
 }
-
+.tours {
+    position: relative;
+}
 .search_tours {
     box-shadow: 0px 7px 20px #00000029;
     padding: 20px;
@@ -215,10 +222,187 @@
     font-size: 12px !important;
     text-transform: capitalize;
 }
+
+.filtered_hotels {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.filters  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filters > span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1C4482;
+
+}
+.left_filter {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.nav-pills .nav-link {
+    color: #7E7E7E;
+    height: 100%;
+    padding-bottom: 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-pills .nav-link.active {
+    font-weight: 700;
+    color: #1C4482;
+}
+.nav-pills .nav-link:hover {
+    color: #1C4482;
+}
+.nav-pills .nav-link::after{
+    display: none;
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0px;
+}
+.dropdown-toggle {
+    color: #7E7E7E;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dropdown-toggle:hover{
+    color: #7E7E7E;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+.setted_tour_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 20px;
+}
+.setted_tour_cards img {
+    max-width: 305px;
+    margin-right: 5px;
+    height: 100%;
+}
+.setted_info .card_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.setted_info .card_info h6 ,
+.setted_info .card_info span  {
+    font-size:18px ;
+    color:#1C4482 ;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight:700 ;
+}
+.setted_info .card_info span {
+    font-size: 22px;
+}
+.setted_info > span ,
+.setted_info p  {
+    font-size:13px ;
+    color:#7E7E7E ;
+    font-weight: 400;
+
+}
+.setted_info > span{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.booking_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     padding: 10px 0px;
+     border-top: 1px solid #DCDCDC;
+}
+.booking_info> span:first-of-type {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #1C4482;
+    width: 80px;
+}
+.booking_info span:nth-of-type(2){
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #222222;
+}
+.booking_info .cancelation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.booking_info .cancelation span:first-of-type {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1C4482;
+}
+.booking_info .cancelation span:nth-of-type(2) a {
+    font-size: 8px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #7E7E7E;
+}
+.booking_info span:nth-of-type(3) {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #1C4482;
+}
+.booking_info  button {
+    background-color: #1C4482;
+    border-radius: 16px;
+}
+.booking_info  button a {
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 2px 15px;
+}
+
 @media (min-width: 992px){
     .filter_labels {
        position: static;
     }
+}
+@media (max-width: 1200px) {
+
+    .filtered_button{
+        display: block;
+        margin-top: 55px;
+    }
+    .search_tours {
+        position: absolute;
+        top: 51px;
+        left: 20px;
+        background-color: white;
+        width: 85%;
+        padding: 30px;
+        display: none;
+        z-index: 33;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    
 }
 @media (min-width: 768px) and (max-width: 991px)  {
    
@@ -238,6 +422,23 @@
        z-index: 333;
        background-color: white;
     }
+    .search_tours {
+        position: absolute;
+        top: 51px;
+        left: 20px;
+        background-color: white;
+        width: 85%;
+        padding: 30px;
+        display: none;
+        z-index: 33;
+    }
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .setted_tour_cards {
+        flex-direction: row;
+        }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -263,5 +464,44 @@
        width: 90%;
        z-index: 333;
        background-color: white;
+    }
+    .setted_tour_cards {
+    flex-direction: column;
+    }
+    .search_tours {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: white;
+        width: 85%;
+        padding: 30px;
+        display: none;
+        z-index: 33;
+    }
+    .filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left_filter {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .dropdown-toggle {
+        margin-top: 10px;
+    }
+    .setted_tour_cards img {
+        max-width: 600px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    .booking_info {
+        flex-wrap: wrap;
+
+    }
+    .setted_info .card_info h6, .setted_info .card_info span{
+        font-size: 14px;
+    }
+    .row>* {
+        padding: 0px;
     }
 }
