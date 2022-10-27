@@ -191,7 +191,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">check in </label>
-                   <!-- <input type="datetime-local" name="date" id="date"> -->
+                   <div class="calender">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" class="start-date form-control" placeholder="start date">
+
+                  </div>
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">adult</label>
@@ -201,7 +205,21 @@
                     <label for="formGroupExampleInput2" class="form-label">child</label>
                     <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="number of child">
                 </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label">price range</label>
+                  <!-- <div class="multiple_range">
+                    <div class="multirange">
+                      <input type="range" min="0" max="1200" value="0" class="lower">
+                      <input type="range" min="0" max="1200" value="1200" class="upper">
+                      <span class="line_range"></span>
+                    </div>
+                    <p><span class="result-l">0</span> L.E -</p> 
+                    <p><span class="result-u">1200</span> L.E</p>
+                  </div> -->
+                </div>
+               
             </div>
+            
         </div>
         <div class="col-sm-12 col-xl-9">
           <div class="filtered_hotels">
@@ -1048,6 +1066,8 @@
     </div>
   </section>
 
+
+
   <!--  ending page  -->
   <section class="ending">
     <div class="newsletter">
@@ -1161,5 +1181,13 @@
   <script src="./js/bootstrap/bootstrap.min.js"></script>
   <!-- <script src="./js/bootstrap/bootstrap.bundle.min.js"></script> -->
 <script src="./js/main.js"></script>
+<!-- date picker -->
+<script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="./js/momnet.js"></script>
+  <script src="./js/bootstrap-datepicker.min.js"></script>
+  <script src="./js/date_picker.js"></script>
+
+  <!-- multiple range -->
+  <script src="./js/multiple-range.js"></script>
 </body>
 </html>

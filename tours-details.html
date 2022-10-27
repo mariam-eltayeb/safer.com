@@ -48,7 +48,7 @@
  
     <!-- icon -->
     <link rel="icon" href="./images/homePage/logo.webp">
-    <title> single-blog </title>
+    <title> tour-details</title>
 </head>
 <body>
      
@@ -266,7 +266,7 @@
                   included
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
                     <div class="included_info">
                       <div class="include-1">
@@ -307,7 +307,7 @@
                  not included 
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
                   <div class="included_info">
                     <div class="include-1">
@@ -340,6 +340,107 @@
     </section>
 
     <!-- rooms section -->
+
+    <section class="reviews container">
+      <div class="review_heading">
+        <h5>
+          room review 
+        </h5>
+
+        <!-- modal -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn add_comment_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa-solid fa-plus"></i>  add comment 
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">add comment </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="form-floating comment_input">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                  <label for="floatingTextarea2"> your Comments ...</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary comment_pop_btn">add comment </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review_details">
+        <img src="./images/tour-details/profile/profile-1.webp" alt="profile picture ">
+        <div class="review_info">
+          <div class="heading">
+            <h6> Felecia Lawson - Paris, France </h6>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Everything was absolutely great, staff were excellent and helpful. 
+          </p>
+        </div>
+
+      </div>
+      <div class="review_details">
+        <img src="./images/tour-details/profile/profile-2.webp" alt="profile picture ">
+        <div class="review_info">
+          <div class="heading">
+            <h6> William W. - Lisbone, Portugal</h6>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Everything was absolutely great, staff were excellent and helpful. Room was spacious and clean. Breakfast was great. Everything was absolutely great, staff were excellent and helpful. Room was spacious and clean. Breakfast was great.          </p>
+        </div>
+
+      </div>
+      <div class="review_details">
+        <img src="./images/tour-details/profile/profile-3.webp" alt="profile picture ">
+        <div class="review_info">
+          <div class="heading">
+            <h6> John Doe - Rome, Italy </h6>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Everything was absolutely great, staff were excellent and helpful. Room was spacious and clean. Breakfast was great .Everything was absolutely great, staff were excellent and helpful. Room was spacious and clean. Breakfast was great .Everything was absolutely great, staff were excellent and helpful. Room was spacious and clean. Breakfast was great.          </p>
+        </div>
+
+      </div>
+
+      <button class="btn comments_button">
+        load all comments
+      </button>
+    </section>
     <!--  ending page  -->
   <section class="ending">
     <div class="newsletter">
