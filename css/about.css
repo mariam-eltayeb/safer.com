@@ -4,7 +4,8 @@
     display: inline-block;
     color: white;
 }
-.slider_details .tabs span a {
+.slider_details .tabs span a ,.slider_details .tabs span
+ {
     text-decoration:none ;
     color: white;
     text-transform: uppercase;

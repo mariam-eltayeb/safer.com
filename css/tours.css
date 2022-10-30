@@ -464,6 +464,12 @@ input[type=range] {
   .calender i {
     color: #7E7E7E;
   }
+  .line{
+    width: initial !important;
+  }
+  .btn:hover {
+    color: white;
+  }
   
 @media (min-width: 992px){
     .filter_labels {
