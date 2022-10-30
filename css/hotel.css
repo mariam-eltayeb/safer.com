@@ -88,6 +88,9 @@ margin-top: 20px;
     .tours {
         margin-top: 127% !important;
     }
+    .setted_tour_cards img{
+        width: 100%;
+    }
 }
 @media (min-width: 355px) and (max-width: 390px){
     .tours {
