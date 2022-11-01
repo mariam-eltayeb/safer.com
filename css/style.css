@@ -305,7 +305,7 @@ a {
 .slider_section .slider_details h1 {
   font-size: 50px;
   color: var(--text-color);
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin-bottom: 15px;
   font-weight: 500;
   line-height: 1.8;
