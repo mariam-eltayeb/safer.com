@@ -457,7 +457,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .hotel_details .main div a {
   color:#1C4482;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   text-decoration: none;
   text-transform: capitalize;
