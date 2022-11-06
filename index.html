@@ -40,8 +40,15 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <!-- slick cdn link -->
   <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick.css">
-  <!-- video poppp styele -->
-  <link rel="stylesheet" href="./js/appleple-modal-video-78d211f/css/modal-video.min.css">
+  <!-- video poppp styele
+  <link rel="stylesheet" href="./js/appleple-modal-video-78d211f/css/modal-video.min.css"> -->
+
+  <!-- new video pop styles -->
+  <!-- <link rel="stylesheet" href="./videos/css-demo-page.css"> -->
+
+  <!-- GRT Youtube Plugin CSS -->
+  <link rel="stylesheet" href="./videos/grt-youtube-popup.css">
+
   <!-- stylesheet  -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- icon -->
@@ -176,20 +183,12 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-xl-3 p-0 ">
+                            <div class="col-sm-12 col-md-6 col-xl-3">
                                 <h5> check in <span>check </span> </h5>
-                               <div class="row mx-0">
-                                <div class="col-6 p-0">
-                                  <div class="calender">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <input type="text" class="start-date form-control" value="2012-04-05">
-
-                                  </div>
+                                <div class="datepicker calender">
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                  <input type="text" id="demo" class="demo" name="datefilter" value="" />
                                 </div>
-                                <div class="col-6 p-0">
-                                  <input type="text" class="end-date form-control" value="2012-04-19">
-                                </div>
-                               </div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-xl-2">
                                 <h5> nights</h5>
@@ -207,45 +206,65 @@
                                     <option value="10">10</option>
                                   </select>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-xl-2">
-                                <h5> adults</h5>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>1</option>
-                                    <option value="1">2 </option>
-                                    <option value="2"> 3</option>
-                                    <option value="3">4</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                  </select>
+                            <div class="col-sm-12 col-md-6 col-xl-4">
+                              <div class="row mx-0 " id="details">
+                                <div class="col-xl-6 col-md-12 col-sm-12 ">
+                                  
+                                  <h5> adults</h5>
+                                  <select class="form-select" aria-label="Default select example">
+                                      <option selected>1</option>
+                                      <option value="1">2 </option>
+                                      <option value="2"> 3</option>
+                                      <option value="3">4</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xl-6 col-md-12 col-sm-12">
+                                    <h5> childs</h5>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>1</option>
+                                        <option value="1">2 </option>
+                                        <option value="2"> 3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                      </select>
+                                    </div>
+                              </div>
+                            </div>
+                      
+                            <!-- <div class="col-sm-12 col-md-6 col-xl-2">
+                                <div id="adults">
+                              
                             </div>
                             <div class="col-sm-12 col-md-6 col-xl-2">
-                                <h5> childs</h5>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>1</option>
-                                    <option value="1">2 </option>
-                                    <option value="2"> 3</option>
-                                    <option value="3">4</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                  </select>
-                            </div>
+                                <div class="childs">
+                               
+                            </div> -->
+
                             <div class="col-sm-12 col-md-6 col-xl-1 p-0">
                                 <div class="main">
                                     <div class="">
-                                        <a href="#">
+                                      <button id="roomBtn" onclick="addInput()">
+                                        <i class="fa-solid fa-circle-plus"></i>
+                                        Add room
+                                      </button>
+
+                                        <!-- <a href="#">
                                           <i class="fa-solid fa-circle-plus"></i>
                                             Add room
-                                        </a>
+                                        </a> -->
                                     </div>
                                     <button class="btn">
                                         <a href="#"> search</a>
@@ -273,18 +292,10 @@
                       </div>
                       <div class="col-sm-12 col-md-6 col-xl-3 p-0 ">
                           <h5> check in <span>check </span> </h5>
-                         <div class="row mx-0">
-                          <div class="col-6 p-0">
-                            <div class="calender">
-                              <i class="fa-solid fa-calendar-days"></i>
-                              <input type="text" class="start-date form-control" value="2012-04-05">
-
-                            </div>
+                          <div class="datepicker calender">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <input type="text" id="demo" class="demo" name="datefilter" value="" />
                           </div>
-                          <div class="col-6 p-0">
-                            <input type="text" class="end-date form-control" value="2012-04-19">
-                          </div>
-                         </div>
                       </div>
                       <div class="col-sm-12 col-md-6 col-xl-2">
                           <h5> nights</h5>
@@ -368,18 +379,11 @@
                       </div>
                       <div class="col-sm-12 col-md-6 col-xl-3 p-0 ">
                           <h5> check in <span>check </span> </h5>
-                         <div class="row mx-0">
-                          <div class="col-6 p-0">
-                            <div class="calender">
-                              <i class="fa-solid fa-calendar-days"></i>
-                              <input type="text" class="start-date form-control" value="2012-04-05">
 
-                            </div>
+                          <div class="datepicker calender">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <input type="text" id="demo" class="demo" name="datefilter" value="" />
                           </div>
-                          <div class="col-6 p-0">
-                            <input type="text" class="end-date form-control" value="2012-04-19">
-                          </div>
-                         </div>
                       </div>
                       <div class="col-sm-12 col-md-6 col-xl-2">
                           <h5> nights</h5>
@@ -792,7 +796,10 @@
           <div class="col-sm-12 col-md-6 col-xl-3">
             <div class="card-content">
               <div class=" card hotels_card">
-                <img src="./images/homePage/hotels/hotel-1.webp" alt=" hotel image">
+                <div class="hover15">
+                  <img src="./images/homePage/hotels/hotel-1.webp" alt=" hotel image">
+                </div>
+
                 <div class="card-body hotel_card_info">
                   <div class="card_info">
                     <h5>cairo hotel </h5>
@@ -907,7 +914,7 @@
       <div class="row mx-0">
         <div class=" col-xl-6 col- md-6 col-sm-12 p-0">
           <div class="images">
-            <button type="button" class="btn js-modal-btn " data-video-url="http://www.youtube.com/embed/WIZXscviHFM" data-bs-toggle="modal" data-bs-target="#video">
+            <button type="button"class="youtube-link" youtubeid="yPu6qV5byu4" >
               <img src="./images/homePage/play_button.webp" alt=" video play button">
             </button>
           </div>
@@ -962,7 +969,7 @@
 
             <img src="./images/homePage/slider-mask.webp" alt="image mask">
 
-            <button type="button" class="btn js-modal-btn "data-video-url="https://www.youtube.com/embed/emAzmJCSEuI" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="youtube-link" youtubeid="yPu6qV5byu4" >
               <img src="./images/homePage/play_button.webp" alt=" video play button">
             </button>
           </div>
@@ -1008,7 +1015,7 @@
           <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
             <div class="row mx-0">
               <div class="col-sm-12 col-md-12 col-xl-6">
-                <div class="blog_side">
+                <div class="blog_side blod_side_left">
                   <div class="blog_image left_image">
                     <!-- <img src="./images/homePage/blog/blog-1.webp" alt="blog image"> -->
                   </div>
@@ -1047,7 +1054,7 @@
                       
                     </div>
                     <div class="col-sm-12 col-xl-12">
-                      <div class="blog_side_right">
+                      <div class="blog_side_right blod_side_left">
                        <div class="blog_image">
                          <img src="./images/homePage/blog/blog-3.webp" alt="blog image">
                        </div>
@@ -1065,7 +1072,7 @@
                        
                      </div>
                      <div class="col-sm-12 col-xl-12">
-                      <div class="blog_side_right">
+                      <div class="blog_side_right blod_side_left">
                        <div class="blog_image">
                          <img src="./images/homePage/blog/blog-4.webp" alt="blog image">
                        </div>
@@ -1442,26 +1449,54 @@
   <div class="copyright">
     <h6>All copyrights reserved to website 2021 </h6>
   </div>  
+  <button class="youtube-link" youtubeid="yPu6qV5byu4" ></button>
+	<!-- <span class="youtube-link" youtubeid="yPu6qV5byu4">Open Video 1 - (dark theme - autoplay disabled)</span><br /> -->
 
   <!-- javascripts links -->
   <!-- bootstrap 5.0v scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+
 <!-- date picker range links -->
-  <script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="./js/momnet.js"></script>
-  <script src="./js/bootstrap-datepicker.min.js"></script>
-  <script src="./js/date_picker.js"></script>
+  <!--  date picker -->
+  <!-- Include Required Prerequisites -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <script src="./js/datepicker.js"></script>
+
+  <!-- end of date picker -->
 
   <!-- Slick.s library -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
   <!-- explore carsoul for turkey section -->
   <script src="./js/explore_carsoul.js"></script>
-  <!-- video popup library -->
+  <!-- video popup library
   <script src="./js/appleple-modal-video-78d211f/js/jquery-modal-video.min.js"></script>
   <script src="./js/appleple-modal-video-78d211f/js/modal-video.js"></script>
-  <script src="./js/video.js"></script>
+  <script src="./js/video.js"></script> -->
+    <!-- new video plug in -->
+    	<!-- Jquery -->
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+		<!-- Github button for demo page -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<!-- GRT Youtube Popup -->
+    <script src="./videos/grt-youtube-popup.js"></script>
+    <script>
+      $(".youtube-link").grtyoutube({
+            autoPlay:true,
+            theme: "dark"
+          });
+    </script>
+ 
+  <!-- adding room -->
+  <script src="./js/add_room.js"></script>
 
 </body>
 </html>
