@@ -166,16 +166,19 @@
     color:#FF0000 ;
     font-size:18px ;
 }
-.date_pickers {
+.labels {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-around;
     margin-bottom: 15px;
+}
+#demo {
+    padding-left: 35px;
 }
 .calender i {
     color: #7E7E7E;
-    top: 6px;
-    left: 22px;
+    top: 15px;
+    left: 11px;
 }
 .start-date, .end-date {
     border: none !important;
@@ -186,8 +189,9 @@
     font-size: 12px;
     margin-bottom: 5px;
 }
-.date_pickers label {
-    font-size: 10px;
+.labels label {
+    font-size: 10px !important;
+    color: #7E7E7E !important;
 }
 /* .start-date::after{
     content: "";

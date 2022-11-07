@@ -28,7 +28,7 @@
     <meta name="description" content="Safer providing you online planning  your  next vacations and  booking trips around the world"/>
     <meta name="image" content="/images/homePage/logo.webp"/>
     <meta property="image:alt" content="Safer - Online hub for booking  trourism trips"/>
-    <meta name="keywords" content="hotels tours transfer visa contact trip destination adults child nights checkin room explore adventure experience offers travel packages agents acitivties hotel  transfer honemoon safari pharonic newsletter   " />
+    <meta name="keywords" content="hotels tours transfer facilities customer serice food drink parking transportation guest service  desination nights adults night book rooms  offer review  comments newsletter   " />
   <!-- style sheets  -->
     <!-- fontawesome  -->
     <link rel="stylesheet" href="./css/all.min.css">
@@ -37,10 +37,10 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
      <!-- video poppp styele -->
-  <link rel="stylesheet" href="./js/appleple-modal-video-78d211f/css/modal-video.min.css">
+    <!-- GRT Youtube Plugin CSS -->
+    <link rel="stylesheet" href="./videos/grt-youtube-popup.css">
     <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css">
-
     <!-- stylesheet  -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
@@ -49,7 +49,7 @@
  
     <!-- icon -->
     <link rel="icon" href="./images/homePage/logo.webp">
-    <title> hotel-details</title>
+    <title> Hotel-details</title>
 </head>
 <body>
      
@@ -90,7 +90,7 @@
                   <a href="./contatcs.html">contatc</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="#">sign in</a>
+                  <a href="sign-in.html">sign in</a>
                 </button>
                 <button class="offcan_buttons">
                   <a href="#">Sign up</a>
@@ -127,7 +127,7 @@
               <ul>
                 <span class="line">  <i class="fa-solid fa-user"></i>  </span>
                 <li>
-                  <a href = "#" class="links hybrid">sign in</a>
+                  <a href = "sign-in.html" class="links hybrid">sign in</a>
                 </li>
                 <li class="sign_up">
                   <a href = "#" class="links hybrid">sign up</a>
@@ -138,8 +138,6 @@
         </div>
           <!-- end of navigation links  -->
       </nav>
-
-      
     </div>
     
     <!-- slider -->
@@ -371,9 +369,7 @@
         </div>
         <div class="col-sm-12 col-xl-6 ">
           <div class="images image-2">
-            <!-- <img src="./images/tour-details/video.webp" class="w-100" alt="image mask"> -->
-          
-            <button type="button" class="btn js-modal-btn "data-video-url="https://www.youtube.com/embed/emAzmJCSEuI" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button"class="youtube-link" youtubeid="yPu6qV5byu4" >
               <img src="./images/homePage/play_button.webp" alt=" video play button">
             </button>
           </div>
@@ -395,69 +391,64 @@
         <div class="hotels container">
             <h5> search hotels </h5>
             <section class="booking_hotels_section container">
-                <div class="hotel_details">
-                    <div class="row mx-0 p-0 align-items-center">
-                        <div class="col-sm-12 col-md-6 col-xl-2 p-s-0 ">
-                            <h5> destination</h5>
-        
-                          <div class="choices">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <select class="form-select" aria-label="Default select example">
-                              <option selected>indonisia</option>
-                              <option value="1">turkey </option>
-                              <option value="2"> egypt</option>
-                              <option value="3">Japan</option>
+              <div class="hotel_details">
+                <div class="row mx-0 p-0">
+                    <div class="col-sm-12 col-md-6 col-xl-2 p-s-0 ">
+                        <h5> destination</h5>
+
+                      <div class="choices">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>indonisia</option>
+                          <option value="1">turkey </option>
+                          <option value="2"> egypt</option>
+                          <option value="3">Japan</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-3">
+                        <h5> check in <span>check </span> </h5>
+                        <div class="datepicker calender">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <input type="text" id="demo" class="demo" name="datefilter" value="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-2">
+                        <h5> nights</h5>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>1</option>
+                            <option value="1">2 </option>
+                            <option value="2"> 3</option>
+                            <option value="3">4</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                      <div class="row mx-0 " id="details">
+                        <div class="col-xl-6 col-md-12 col-sm-12 ">
+                          
+                          <h5> adults</h5>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>1</option>
+                              <option value="1">2 </option>
+                              <option value="2"> 3</option>
+                              <option value="3">4</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
                             </select>
                           </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-xl-3 p-0 ">
-                            <h5> check in <span>check </span> </h5>
-                           <div class="row mx-0">
-                            <div class="col-6 p-0">
-                              <div class="calender">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <input type="text" class="start-date form-control" value="2012-04-05">
-        
-                              </div>
-                            </div>
-                            <div class="col-6 p-0">
-                              <input type="text" class="end-date form-control" value="2012-04-19">
-                            </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-xl-2">
-                            <h5> nights</h5>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>1</option>
-                                <option value="1">2 </option>
-                                <option value="2"> 3</option>
-                                <option value="3">4</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                              </select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-xl-2">
-                            <h5> adults</h5>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>1</option>
-                                <option value="1">2 </option>
-                                <option value="2"> 3</option>
-                                <option value="3">4</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                              </select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-xl-2">
+                          <div class="col-xl-6 col-md-12 col-sm-12">
                             <h5> childs</h5>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>1</option>
@@ -472,22 +463,39 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                               </select>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-xl-1 p-0">
-                            <div class="main">
-                                <div class="">
-                                    <a href="#">
-                                      <i class="fa-solid fa-circle-plus"></i>
-                                        Add room
-                                    </a>
-                                </div>
-                                <button class="btn">
-                                    <a href="#"> search</a>
-                                </button>
                             </div>
+                      </div>
+                    </div>
+              
+                    <!-- <div class="col-sm-12 col-md-6 col-xl-2">
+                        <div id="adults">
+                      
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-2">
+                        <div class="childs">
+                       
+                    </div> -->
+
+                    <div class="col-sm-12 col-md-6 col-xl-1 p-0">
+                        <div class="main">
+                            <div class="">
+                              <button id="roomBtn" onclick="addInput()">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                Add room
+                              </button>
+
+                                <!-- <a href="#">
+                                  <i class="fa-solid fa-circle-plus"></i>
+                                    Add room
+                                </a> -->
+                            </div>
+                            <button class="btn">
+                                <a href="#"> search</a>
+                            </button>
                         </div>
                     </div>
-                </div>        
+                </div>
+            </div>      
             </section>
         </div>
         <div class="rooms_avaliable container">
@@ -872,7 +880,7 @@
     <h6>All copyrights reserved to website 2021 </h6>
   </div>  
 
-    <script src="./js/range.js"></script>
+ 
 
     <!-- javascripts links -->
   <!-- bootstrap 5.0v scripts -->
@@ -880,13 +888,36 @@
   <script src="./js/bootstrap/bootstrap.min.js"></script>
   <!-- <script src="./js/bootstrap/bootstrap.bundle.min.js"></script> -->
   <script src="./js/main.js"></script>
+
   <!-- jquery library -->
   <script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
+ 
+ 
   <!-- video popup library -->
-  <script src="./js/appleple-modal-video-78d211f/js/jquery-modal-video.min.js"></script>
-  <script src="./js/appleple-modal-video-78d211f/js/modal-video.js"></script>
-  <script src="./js/video.js"></script>
+ <!-- Github button for demo page -->
+ <script async defer src="https://buttons.github.io/buttons.js"></script>
 
+ <!-- GRT Youtube Popup -->
+ <script src="./videos/grt-youtube-popup.js"></script>
+ <script>
+   $(".youtube-link").grtyoutube({
+         autoPlay:true,
+         theme: "dark"
+       });
+ </script>
 
+ <!-- date picker range links -->
+  <!--  date picker -->
+  <!-- Include Required Prerequisites -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <script src="./js/datepicker.js"></script>
+
+ <!-- add room button -->
+ <script src="./js/add_room.js"></script>
 </body>
 </html>

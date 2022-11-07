@@ -97,6 +97,9 @@ margin-top: 20px;
     padding-top: 0px;
     border-top: none;
 }
+.calender i {
+    color: #168BB8;
+}
 @media (min-width: 320px) and (max-width: 767px){
     .hotel_details .main{
         margin-top: 30px;

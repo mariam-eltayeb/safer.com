@@ -1818,15 +1818,15 @@ a:hover {
   color: #68C2E5;
 }
 
-#details {
+.new {
   position: relative;
 }
-#details .remove {
+.new .remove {
   position: absolute;
   right: 0px;
   top: 0px;
 }
-#details .remove button {
+.new .remove button {
   border: none;
   background-color: red;
   border-radius: 50%;

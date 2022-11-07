@@ -28,7 +28,7 @@
     <meta name="description" content="Safer providing you online planning  your  next vacations and  booking trips around the world"/>
     <meta name="image" content="/images/homePage/logo.webp"/>
     <meta property="image:alt" content="Safer - Online hub for booking  trourism trips"/>
-    <meta name="keywords" content="hotels tours transfer visa contact trip destination adults child nights checkin room explore adventure experience offers travel packages agents acitivties hotel  transfer honemoon safari pharonic newsletter   " />
+    <meta name="keywords" content="hotels tours transfer facilities customer serice food drink parking transportation guest service  desination nights adults night book rooms  offer review  comments newsletter   " />
   <!-- style sheets  -->
     <!-- fontawesome  -->
     <link rel="stylesheet" href="./css/all.min.css">
@@ -37,8 +37,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
      <!-- video poppp styele -->
-  <link rel="stylesheet" href="./js/appleple-modal-video-78d211f/css/modal-video.min.css">
-    <!-- normalize -->
+    <!-- GRT Youtube Plugin CSS -->
+    <link rel="stylesheet" href="./videos/grt-youtube-popup.css">    <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css">
 
     <!-- stylesheet  -->
@@ -332,7 +332,7 @@
           <div class="images image-2">
             <!-- <img src="./images/tour-details/video.webp" class="w-100" alt="image mask"> -->
           
-            <button type="button" class="btn js-modal-btn "data-video-url="https://www.youtube.com/embed/emAzmJCSEuI" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button"class="youtube-link" youtubeid="yPu6qV5byu4" >
               <img src="./images/homePage/play_button.webp" alt=" video play button">
             </button>
         </div>
@@ -556,10 +556,19 @@
   <script src="./js/main.js"></script>
   <!-- jquery library -->
   <script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
   <!-- video popup library -->
-  <script src="./js/appleple-modal-video-78d211f/js/jquery-modal-video.min.js"></script>
-  <script src="./js/appleple-modal-video-78d211f/js/modal-video.js"></script>
-  <script src="./js/video.js"></script>
+ <!-- Github button for demo page -->
+ <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+ <!-- GRT Youtube Popup -->
+ <script src="./videos/grt-youtube-popup.js"></script>
+ <script>
+   $(".youtube-link").grtyoutube({
+         autoPlay:true,
+         theme: "dark"
+       });
+ </script>
 
 
 </body>

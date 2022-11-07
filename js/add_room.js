@@ -1,12 +1,14 @@
 var addRoomBtn =document.getElementById ('roomBtn');
 var formInput = document.getElementById('details');
-var removeBtn = document.getElementById('removeBtn"')
+var removeBtn = document.getElementById('removeBtn"');
+
 
 function addInput() {
-    var fields = '   <div class="row mx-0 " id="details" id="new"> \n\
+  var detailCounter = document.getElementsByClassName('details_content').length;
+    var fields = ` <div class="row mx-0  details_content new" id="details-${detailCounter}"> \n\
     <div class="col-xl-6 col-md-12 col-sm-12 ">\n\
     <div class="remove">\n\
-    <button id="removeBtn" onclick="remove()">\n\
+    <button id="removeBtn" onclick="remove(this)">\n\
         <i class="fa-solid fa-xmark"></i>\n\
     </button>\n\
     </div>\n\
@@ -41,11 +43,11 @@ function addInput() {
             <option value="10">10</option>\n\
           </select>\n\
         </div>\n\
-  </div> '
+  </div> `
   formInput.insertAdjacentHTML ('beforeend',fields);
 };
 
-
-// function remove() {
-//     formInput.remove();
-// }
+function remove($event) {
+  console.log ($event.closest('.details_content'));
+  $event.closest('.details_content').remove();
+}

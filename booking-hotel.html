@@ -88,7 +88,7 @@
                   <a href="./contatcs.html">contatc</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="#">sign in</a>
+                  <a href="./sign-in.html">sign in</a>
                 </button>
                 <button class="offcan_buttons">
                   <a href="#">Sign up</a>
@@ -125,7 +125,7 @@
               <ul>
                 <span class="line">  <i class="fa-solid fa-user"></i>  </span>
                 <li>
-                  <a href = "#" class="links hybrid">sign in</a>
+                  <a href = "/sign-in.html" class="links hybrid">sign in</a>
                 </li>
                 <li class="sign_up">
                   <a href = "#" class="links hybrid">sign up</a>
@@ -136,10 +136,7 @@
         </div>
           <!-- end of navigation links  -->
       </nav>
-
-      
-    </div>
-    
+    </div>   
     <!-- slider -->
     <div class="slider_section">
         <div class="slider_details">
@@ -227,16 +224,17 @@
                                 booking for 3 nights 
                             </h5>
                              <div class="row mx-0">
-                              <div class="col-6 p-0">
-                                <div class="calender date_pickers">
+                              <div class="col-9 p-0 picker_section">
+                                
+                                <div class="datepicker calender">
                                   <i class="fa-solid fa-calendar-days"></i>
-                                  <input type="text" class="start-date form-control" value="25-06-2022">
-                                  <label for=""> Monday</label>
+                                  <input type="text" id="demo" class="demo" name="datefilter" value="" />
                                 </div>
-                              </div>
-                              <div class="col-6 p-0 date_pickers">
-                                <input type="text" class="end-date form-control" value="28-06-2022">
-                                <label for=""> Tuesday</label>
+                                <div class="labels">
+                                  <label for=""> Monday</label>  <label for=""> Tuesday</label>
+
+                                </div>
+                            
                               </div>
                              </div>
                             <h5>rooms</h5>
@@ -383,14 +381,15 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="./js/bootstrap/bootstrap.min.js"></script>
   <!-- <script src="./js/bootstrap/bootstrap.bundle.min.js"></script> -->
-<script src="./js/main.js"></script>
-<!-- date picker -->
-<script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="./js/momnet.js"></script>
-  <script src="./js/bootstrap-datepicker.min.js"></script>
-  <script src="./js/date_picker.js"></script>
+  <script src="./js/main.js"></script>
+  <!--  date picker -->
+  <!-- Include Required Prerequisites -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <script src="./js/datepicker.js"></script>
 
-  <!-- multiple range -->
-  <script src="./js/multiple-range.js"></script>
 </body>
 </html>
