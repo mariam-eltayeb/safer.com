@@ -1,6 +1,7 @@
 var addRoomBtn =document.getElementById ('roomBtn');
 var formInput = document.getElementById('details');
 var removeBtn = document.getElementById('removeBtn"');
+var roomBtn =document.getElementById('room_main');
 
 
 function addInput() {
@@ -9,7 +10,7 @@ function addInput() {
     <div class="col-xl-6 col-md-12 col-sm-12 ">\n\
     <div class="remove">\n\
     <button id="removeBtn" onclick="remove(this)">\n\
-        <i class="fa-solid fa-xmark"></i>\n\
+    <i class="fa-solid fa-trash-can"></i>\n\
     </button>\n\
     </div>\n\
       <h5> adults</h5>\n\
@@ -45,9 +46,12 @@ function addInput() {
         </div>\n\
   </div> `
   formInput.insertAdjacentHTML ('beforeend',fields);
+  roomBtn.style.flexDirection ="column-reverse";
+  roomBtn.style.justifyContent ="space-between";
 };
 
 function remove($event) {
   console.log ($event.closest('.details_content'));
   $event.closest('.details_content').remove();
+
 }
