@@ -17,5 +17,57 @@
     height: 100%;
 }
 .hotel_details .main > button {
-height: 62%;
+    height:50px;
+}
+.search_details_info input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 12px;
+
+
+}
+.dating_inputs input {
+    padding-left: 35px;
+    padding-right: 5px;
+    text-align: left;
+}
+.calender i {
+    top: 7px;
+    left: 10px;
+}
+.hotel_details input:focus-visible {
+    border: 1px solid #ced4da;
+}
+.main button {
+    font-size: 23px;
+    text-transform: capitalize;
+    color: white;
+    
+}
+ @media (min-width:1399px) {
+    .search_details .search_details_info .row>* {
+        width: 248px !important;
+    }
+}
+/* @media (min-width:991px) and (max-width:1398px) {
+    .search_details .search_details_info .row>* {
+        width: 210px !important;
+    }
+} */ 
+@media (min-width:320px) and (max-width:1200px) {
+    .search_details_info{
+        position: static;
+    }
+    .search_details {
+        padding-top: 30px;
+    }
 }
