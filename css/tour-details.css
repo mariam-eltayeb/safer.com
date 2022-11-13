@@ -2,6 +2,19 @@
     margin-top: 50px;
     padding-bottom: 50px;
 }
+  /* imag gallery  */
+  #mainImage  {
+    width: 637px;
+    height: 360px;
+}
+.imgStyle {
+    width: 197px;
+    height: 140px;
+  }
+  /* .imgStyle:hover {
+    transform: scale();
+  } */
+  
 .tour_info .titles  {
     position: relative;
     border-bottom:  1px solid #DCDCDC;
@@ -339,10 +352,17 @@
     .review_details .heading h6 {
         margin-bottom: 10px;
     }
+    /* .included_info {
+        flex-direction: column;
+    } */
+    .included_info .include-1 {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 320px)  and (max-width:420px) {
     .included_info {
         flex-direction: column;
     }
-    .included_info .include-1 {
-        margin-bottom: 15px;
-    }
 }
+    
+  

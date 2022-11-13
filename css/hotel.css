@@ -36,7 +36,7 @@
     width: 417px;
     height: 210px;
 }
-.setted_info .card_info h6 a {
+.setted_info .card_info h6 {
     font-size: 18px;
     color: #1C4482;
     text-transform: capitalize;
@@ -44,13 +44,26 @@
 }
 .setted_info .card_info span {
     color: #7E7E7E;
+    z-index: 10;
 }
 .setted_info .card_info span:hover {
     color: #1C4482;
+
 }
 .setted_info > span span {
     margin-left: 8px;
     margin-right: 8px;
+
+}
+.setted_tour_cards:hover .card_info h6 {
+    text-decoration: underline;
+} 
+
+.setted_tour_cards:hover .image_overlay::after {
+    display: none;
+}
+.setted_tour_cards .image_overlay::after{
+    width: 99%;
 
 }
 .btn:hover {
@@ -78,7 +91,7 @@
     justify-content: space-between;
 }
 .hotel_details .main button {
-margin-top: 20px;
+margin-top: 0px;
 }
 .accordion-button:not(.collapsed) {
     background-color: transparent;
@@ -100,16 +113,51 @@ margin-top: 20px;
 .calender i {
     color: #168BB8;
 }
+#hotel_search {
+    margin-top: 30px;
+}
+
+
 @media (min-width: 320px) and (max-width: 767px){
     .hotel_details .main{
-        margin-top: 30px;
+        margin-top: 12px;
     }
     .tours {
         margin-top: 127% !important;
     }
+    .setted_tour_cards {
+        width: fit-content;
+        margin: auto;
+    }
     .setted_tour_cards img{
         width: 100%;
     }
+    .filter_labels {
+        position: static;
+        display: block ;
+    }
+    .hotel_details {
+        padding-bottom: 25px;
+    }
+    .card-content{
+        margin-bottom: 25px;
+    }
+ 
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .filter_labels {
+        position: static;
+        display: block ;
+    }
+    .card-content{
+        margin-bottom: 25px;
+    }
+  
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .search_tours {
+        width: 30%  ;
+    } 
 }
 @media (min-width: 355px) and (max-width: 390px){
     .tours {
@@ -156,14 +204,14 @@ margin-top: 20px;
 @media (min-width: 768px) and (max-width: 900px)
 {
     .tours {
-        margin-top: 21% !important;
+        margin-top: 28% !important;
     }
 }
 
 @media (min-width: 901px) and (max-width: 1200px)
 {
     .tours {
-        margin-top: 18% !important;
+        margin-top: 23% !important;
     }
 }
 

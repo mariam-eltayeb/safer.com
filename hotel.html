@@ -232,39 +232,24 @@
                     </div>
               </div>
             </div>
-      
-            <!-- <div class="col-sm-12 col-md-6 col-xl-2">
-                <div id="adults">
-              
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-2">
-                <div class="childs">
-               
-            </div> -->
-
             <div class="col-sm-12 col-md-6 col-xl-1 p-0">
-                <div class="main">
-                    <div class="">
-                      <button id="roomBtn" onclick="addInput()">
-                        <i class="fa-solid fa-circle-plus"></i>
-                        Add room
-                      </button>
-
-                        <!-- <a href="#">
-                          <i class="fa-solid fa-circle-plus"></i>
-                            Add room
-                        </a> -->
-                    </div>
-                    <button class="btn">
-                        <a href="#"> search</a>
-                    </button>
+              <div class="main" id="room_main">
+                <div class="">
+                  <button id="roomBtn" onclick="addInput()">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    Add room
+                  </button>
                 </div>
+                <button class="btn">
+                    <a href="#"> search</a>
+                </button>
+            </div>
             </div>
         </div>
     </div>     
     </section>
 
-  <section class="tours container mt-4">
+  <section class="tours container" id="hotel_search">
     <div class="row mx-0">
         <div class="  col-sm-0 col-xl-3">
           <button class="btn filtered_button" onclick="openFilter()" id="filterButton">
@@ -446,8 +431,8 @@
                                   <input type="range" min="0" max="1200" value="1200" class="upper">
                                   <span class="line_range"></span>
                                 </div>
-                                <p><span class="result-l">0</span> L.E -</p> 
-                                <p><span class="result-u">1200</span> L.E</p>
+                                <p><span class="result-l">0</span> -</p> 
+                                <p><span class="result-u">1200</span></p>
                               </div> 
                           </div>            
                          </div>
@@ -499,12 +484,89 @@
 
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active w-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <a href="./hotel_details.html">
+                    <div class="card-content">
+                      <div class=" card setted_tour_cards ">
+                        <div class="card_image">
+                          <div class="image_overlay">
+                            <img src="./images/homePage/hotels/hotel-1.webp" alt=" blogimage">
+                          </div>  
+                        </div>
+                        <div class="card-body  setted_info">
+                          <div class="card_info">
+                              <h6>Venice, Rome and Milan – 9 Days 8</h6>
+                              <span>
+                                <i class="fa-regular fa-heart"></i>
+                              </span>
+                          </div>
+                          <span>     <i class="fa-solid fa-location-dot"></i>  turkey  <span>|</span> istanbul</span>
+                          <p>
+                            Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                          </p>
+                          <div class="price">
+                            <div class="rating">
+  
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+  
+                                <span> ( 5 review) </span>
+                            </div>
+                            <span class="hotels_price"> $ 140</span>
+                          </div>
+                        </div> 
+                    </div>
+                    </div>
+                  </a>
+                  <a href="./hotel_details.html">
+                    <div class="card-content">
+                      <div class=" card setted_tour_cards ">
+                        <div class="card_image">
+                          <div class="image_overlay">
+                            <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                          </div>  
+                        </div>
+                        <div class="card-body  setted_info">
+                          <div class="card_info">
+                               <h6>Venice, Rome and Milan – 9 Days 8</h6>
+                              <span>
+                                <i class="fa-regular fa-heart"></i>
+                              </span>
+                          </div>
+                          <span>     <i class="fa-solid fa-location-dot"></i>  turkey  <span>|</span> istanbul</span>
+                          <p>
+                            Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                          </p>
+                          <div class="price">
+                            <div class="rating">
+  
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+  
+                                <span> ( 5 review) </span>
+                            </div>
+                            <span class="hotels_price"> $ 140</span>
+                          </div>
+                        </div> 
+                    </div>
+                    </div>
+                  </a>
+                <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-1.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -529,12 +591,19 @@
                       </div> 
                   </div>
                   </div>
+                </a>
+                <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                        </div>  
+                      </div>
+                     
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -559,12 +628,18 @@
                       </div> 
                   </div>
                   </div>
+                </a>
+                 <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -589,12 +664,54 @@
                       </div> 
                   </div>
                   </div>
+                 </a>
+               <a href="./hotel_details.html">
+                <div class="card-content">
+                  <div class=" card setted_tour_cards ">
+                    <div class="card_image">
+                      <div class="image_overlay">
+                        <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                      </div>  
+                    </div>
+                    <div class="card-body  setted_info">
+                      <div class="card_info">
+                           <h6>Venice, Rome and Milan – 9 Days 8</h6>
+                          <span>
+                            <i class="fa-regular fa-heart"></i>
+                          </span>
+                      </div>
+                      <span>     <i class="fa-solid fa-location-dot"></i>  turkey  <span>|</span> istanbul</span>
+                      <p>
+                        Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
+                      </p>
+                      <div class="price">
+                        <div class="rating">
+
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+
+                            <span> ( 5 review) </span>
+                        </div>
+                        <span class="hotels_price"> $ 140</span>
+                      </div>
+                    </div> 
+                </div>
+                </div>
+               </a>
+                <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -619,105 +736,22 @@
                       </div> 
                   </div>
                   </div>
-                  <div class="card-content">
-                    <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
-                      <div class="card-body  setted_info">
-                        <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
-                            <span>
-                              <i class="fa-regular fa-heart"></i>
-                            </span>
-                        </div>
-                        <span>     <i class="fa-solid fa-location-dot"></i>  turkey  <span>|</span> istanbul</span>
-                        <p>
-                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
-                        </p>
-                        <div class="price">
-                          <div class="rating">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-
-                              <span> ( 5 review) </span>
-                          </div>
-                          <span class="hotels_price"> $ 140</span>
-                        </div>
-                      </div> 
-                  </div>
-                  </div>
-                  <div class="card-content">
-                    <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
-                      <div class="card-body  setted_info">
-                        <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
-                            <span>
-                              <i class="fa-regular fa-heart"></i>
-                            </span>
-                        </div>
-                        <span>     <i class="fa-solid fa-location-dot"></i>  turkey  <span>|</span> istanbul</span>
-                        <p>
-                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
-                        </p>
-                        <div class="price">
-                          <div class="rating">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-
-                              <span> ( 5 review) </span>
-                          </div>
-                          <span class="hotels_price"> $ 140</span>
-                        </div>
-                      </div> 
-                  </div>
-                  </div>
-                  <div class="card-content">
-                    <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
-                      <div class="card-body  setted_info">
-                        <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
-                            <span>
-                              <i class="fa-regular fa-heart"></i>
-                            </span>
-                        </div>
-                        <span>     <i class="fa-solid fa-location-dot"></i>  turkey  <span>|</span> istanbul</span>
-                        <p>
-                          Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet 
-                        </p>
-                        <div class="price">
-                          <div class="rating">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-
-                              <span> ( 5 review) </span>
-                          </div>
-                          <span class="hotels_price"> $ 140</span>
-                        </div>
-                      </div> 
-                  </div>
-                  </div>
+                </a>
+                
                   
                 </div>
                 <div class="tab-pane fade w-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                 <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-1.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-1.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -742,12 +776,18 @@
                       </div> 
                   </div>
                   </div>
+                 </a>
+                 <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -772,12 +812,18 @@
                       </div> 
                   </div>
                   </div>
+                 </a>
+                <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-5.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -802,12 +848,20 @@
                       </div> 
                   </div>
                   </div>
+                </a>
+                
+                <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-3.webp" alt=" blogimage">
+                        </div>  
+                      </div>
+                
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -832,12 +886,18 @@
                       </div> 
                   </div>
                   </div>
+                </a>
+                 <a href="./hotel_details.html">
                   <div class="card-content">
                     <div class=" card setted_tour_cards ">
-                      <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                      <div class="card_image">
+                        <div class="image_overlay">
+                          <img src="./images/homePage/hotels/hotel-4.webp" alt=" blogimage">
+                        </div>  
+                      </div>
                       <div class="card-body  setted_info">
                         <div class="card_info">
-                            <h6> <a href="./hotel_details.html" class="stretched-link">Venice, Rome and Milan – 9 Days 8</a></h6>
+                             <h6>Venice, Rome and Milan – 9 Days 8</h6>
                             <span>
                               <i class="fa-regular fa-heart"></i>
                             </span>
@@ -863,6 +923,7 @@
                   </div>
                   </div>
 
+                 </a>
                 </div>
               </div>
              
@@ -1002,12 +1063,12 @@
 <script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <!--  date picker -->
   <!-- Include Required Prerequisites -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   
   <!-- Include Date Range Picker -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
   <script src="./js/datepicker.js"></script>
 
   <!-- multiple range -->

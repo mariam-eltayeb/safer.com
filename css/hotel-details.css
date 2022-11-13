@@ -98,6 +98,13 @@ margin-top: 30px;
     text-decoration: none;
     padding: 2px 15px;
 } 
+.rooms_button:hover {
+    background-color: white;
+    border: 1px solid #1C4482;
+} 
+.rooms_button:hover a {
+    color: #1C4482;
+}
 .request {
     color: #FF0000 !important; 
 }

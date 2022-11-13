@@ -164,20 +164,15 @@
             <div class="col-sm-12 col-xl-6">
                 <div class="row mx-0 left_side_imgages">
                     <div class="col-12">
-                        <img src="./images/tour-details/tour-details-1.webp" class="w-100 mb-3" alt=" tour hotel image ">
-
+                      <img id="mainImage" 
+                      src="./images/tour-details/tour-details-1.webp" class="w-100 mb-3" alt=" tour hotel image "/>
                     </div>
-                    <div class="col-4">
-                        <img src="./images/tour-details/tour-details-2 .webp"  class="w-100" alt=" tour hotel image ">
-
-                    </div>
-                    <div class="col-4">
-                        <img src="./images/tour-details/tour-details-1.webp"  class="w-100" alt=" tour hotel image ">
-
-                    </div>
-                    <div class="col-4">
-                        <img src="./images/tour-details/tour-details-3.webp"  class="w-100" alt=" tour hotel image ">
-
+                    <div class="col-12">
+                        <div id="divId" onclick="changeImageOnClick(event)">
+                          <img class="imgStyle" src="./images/tour-details/tour-details-2 .webp"   alt=" tour hotel image " />
+                          <img class="imgStyle" src="./images/tour-details/tour-details-1.webp"   alt=" tour hotel image " />
+                          <img class="imgStyle" src="./images/tour-details/tour-details-3.webp"   alt=" tour hotel image" />
+                       </div>
                     </div>
                 </div>
             </div>
@@ -269,33 +264,34 @@
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
                     <div class="included_info">
-                      <div class="include-1">
-                        <img src="images/tour-details/included/24 hour cutomer service.webp" alt="24 hour customer service">
-                        <span> 24 hour cutomer service</span>
-                      </div>
-                      <div class="include-1">
-                        <img src="images/tour-details/included/parking Car.webp" alt="parking Car">
-                        <span> 24 hour cutomer service</span>
-                      </div>
-                      <div class="include-1">
-                        <img src="images/tour-details/included/laundry.webp" alt="laundry">
-                        <span> 24 hour cutomer service</span>
+                      <div class="included_info">
+                        <div class="include-1">
+                          <img src="images/tour-details/included/24 hour cutomer service.webp" alt="24 hour customer service">
+                          <span> 24 hour cutomer service</span>
+                        </div>
+                        <div class="include-1">
+                          <img src="images/tour-details/included/parking Car.webp" alt="parking Car">
+                          <span> 24 hour cutomer service</span>
+                        </div>
+                        <div class="include-1">
+                          <img src="images/tour-details/included/laundry.webp" alt="laundry">
+                          <span> 24 hour cutomer service</span>
+                        </div>
+                        <div class="include-1">
+                          <img src="images/tour-details/included/24 hour cutomer service.webp" alt="24 hour customer service">
+                          <span> 24 hour cutomer service</span>
+                        </div>
+                        <div class="include-1">
+                          <img src="images/tour-details/included/parking Car.webp" alt="parking Car">
+                          <span> 24 hour cutomer service</span>
+                        </div>
+                        <div class="include-1">
+                          <img src="images/tour-details/included/laundry.webp" alt="laundry">
+                          <span> 24 hour cutomer service</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="included_info">
-                      <div class="include-1">
-                        <img src="images/tour-details/included/24 hour cutomer service.webp" alt="24 hour customer service">
-                        <span> 24 hour cutomer service</span>
-                      </div>
-                      <div class="include-1">
-                        <img src="images/tour-details/included/parking Car.webp" alt="parking Car">
-                        <span> 24 hour cutomer service</span>
-                      </div>
-                      <div class="include-1">
-                        <img src="images/tour-details/included/laundry.webp" alt="laundry">
-                        <span> 24 hour cutomer service</span>
-                      </div>
-                    </div>
+                  
                 </div>
               </div>
             </div>
@@ -375,11 +371,11 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary comment_pop_btn">add comment </button>
+                <button type="button" class="btn btn-primary comment_pop_btn" data-bs-dismiss="modal" >add comment </button>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
       <div class="review_details">
         <img src="./images/tour-details/profile/profile-1.webp" alt="profile picture ">
@@ -546,7 +542,10 @@
     <h6>All copyrights reserved to website 2021 </h6>
   </div>  
 
-    <script src="./js/range.js"></script>
+  
+
+
+
 
     <!-- javascripts links -->
   <!-- bootstrap 5.0v scripts -->
@@ -560,6 +559,11 @@
   <!-- video popup library -->
  <!-- Github button for demo page -->
  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- image gallery  -->
+<script src="./js/image_gllery.js"></script>
+<!--price range -->
+    <script src="./js/range.js"></script>
 
  <!-- GRT Youtube Popup -->
  <script src="./videos/grt-youtube-popup.js"></script>

@@ -1,151 +1,4 @@
-/* .filter_labels  {
-    margin-top:70px;
-    padding: 20px;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
 
-}
-.form-check {
-    margin-bottom: 6px;
-}
-.filter_labels label {
-    font-size: 15px;
-    text-transform: capitalize;
-    color: #210D3A;
-}
-.filter_labels h6 {
-    font-size:20px ;
-    color:#210D3A ;
-    text-transform: capitalize;
-    font-weight: 700;
-
-}
-.accordion-body {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-}
-.accordion-item {
-    border: none;
-}
-.accordion .accordion-item .accordion-button {
-    padding-left: 0px;
-    padding-right: 0px;
-    text-transform: capitalize;
-    font-size: 15px;
-    background-color: transparent;
-    border-bottom: 0px transparent;
-    box-shadow: none;
-    border: transparent;
-    color: #210D3A;
-    padding-bottom: 10px;
-    border: none;
-}
-.accordion-button:not(.collapsed) {
-    color: #210D3A;
-}
-.rating i {
-    color: #F97150;
-}
-.fiter_title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.fiter_title>span {
-    font-size: 30px;
-    color: #210D3A;
-    text-transform:capitalize ;
-    font-weight: 800;
-}
-.fiter_title .filter span {
-    font-size: 20px;
-    color: #210D3A;
-}
-.fiter_title .filter .dropdown {
-    display: inline-block;
- 
-}
-.fiter_title .filter .dropdown button{
-    background-color: transparent;
-    color: #210D3A;
-    border: none;
-    text-transform: capitalize;
-    font-weight: 800;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.dropdown-toggle::after {
-    vertical-align: 0rem;
-}
-.fiter_title .filter .dropdown ul li a {
-    text-transform: capitalize;
-    font-weight: 500;
-}
-.btn-check:focus+.btn, .btn:focus {
-    box-shadow: none;
-}
-.hotels .hotels_card:hover{
-    transform: none;
-}
-.hotels .hotels_card .hotel_card_info {
-    background-color: white;
-}
-.filtrered_cards .tours_card img {
-   height: 370px;
-
-}
-.fiter_title {
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-.filtrered_cards .tours_card{
-    box-shadow: 0px 3px 6px #00000029;
-}
-.filtrered_cards .tours_card h5{
-    color: #2B303C !important;
-}
-.filtrered_cards .tours_card .location span ,
-.filtrered_cards .tours_card .location i{
-    color: #7E7E7E !important;
-    text-transform: capitalize;
-    font-weight: 800 !important;
-}
-.filtrered_cards .tours_card .location span span {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.filtrered_cards .tours_card .price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.filtrered_cards .tours_card .price .rating {
-    display: flex;
-    align-items: center;
-}
-.filtrered_cards .tours_card .price .rating i {
-  color:#F97150 ;
-  font-size: 15px;
-
-}
-.filtrered_cards .tours_card .price .rating span {
-    font-size: 10px !important;
-    color: #7E7E7E !important;
-    text-transform: capitalize;
-    padding-left: 10px;
-}
-.filtrered_cards .tours_card .price span {
-    color: #210D3A !important;
-    font-size: 22px !important;
-    font-weight: 800 !important;
-}
- */
- 
  /* pagination styles */
 
  .pagination  {
@@ -299,13 +152,21 @@
     margin-right: 5px;
     height: 100%;
 }
+.duartion {
+    color: #7E7E7E;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
 .setted_info .card_info{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .setted_info .card_info h6 ,
-.setted_info .card_info span  {
+.setted_info .card_info >span  {
     font-size:18px ;
     color:#1C4482 ;
     margin-bottom: 10px;
@@ -320,12 +181,21 @@
     font-size:13px ;
     color:#7E7E7E ;
     font-weight: 400;
-
 }
 .setted_info > span{
     text-transform: capitalize;
     margin-bottom: 5px;
     display: inline-block;
+}
+.setted_tour_cards:hover .card_info h6 {
+    text-decoration: underline;
+} 
+
+.setted_tour_cards:hover .image_overlay::after {
+    display: none;
+}
+.setted_tour_cards .image_overlay::after{
+    width: 99%;
 }
 .booking_info{
     display: flex;
@@ -334,6 +204,7 @@
      padding: 10px 0px;
      border-top: 1px solid #DCDCDC;
 }
+
 .details {
     display: flex ;
     flex-direction: row; 
@@ -366,7 +237,9 @@
     text-transform: capitalize;
     color: #1C4482;
 }
-.booking_info .cancelation span:nth-of-type(2) a {
+.booking_info .cancelation span:nth-of-type(2) a ,
+.booking_info .cancelation a:nth-of-type(2) 
+{
     font-size: 8px;
     font-weight: 400;
     text-transform: capitalize;
@@ -390,6 +263,13 @@
     padding: 2px 15px;
 }
 
+.booking_info  button:hover {
+    background-color: white;
+    border: 1px solid #1C4482;
+}
+.booking_info  button:hover a {
+    color: #1C4482;
+}
 input[type=range] {
     box-sizing: border-box;
     appearance: none;
@@ -467,10 +347,7 @@ input[type=range] {
   .line{
     width: initial !important;
   }
-  .btn:hover {
-    color: white;
-  }
-  
+
 @media (min-width: 992px){
     .filter_labels {
        position: static;
@@ -488,7 +365,7 @@ input[type=range] {
         top: 51px;
         left: 20px;
         background-color: white;
-        width: 85%;
+        width: 30%;
         padding: 30px;
         display: none;
         z-index: 33;
@@ -520,7 +397,7 @@ input[type=range] {
         top: 51px;
         left: 20px;
         background-color: white;
-        width: 85%;
+        width: 30%;
         padding: 30px;
         display: none;
         z-index: 33;
@@ -580,7 +457,7 @@ input[type=range] {
         top: 55px;
         left: 20px;
         background-color: white;
-        width: 85%;
+        width: 80%;
         padding: 30px;
         display: none;
         z-index: 33;
@@ -605,9 +482,8 @@ input[type=range] {
         flex-wrap: wrap;
 
     }
-    .setted_info .card_info h6, .setted_info .card_info span{
-        font-size: 14px;
-    }
+    
+
     .row>* {
         padding: 0px;
     }
