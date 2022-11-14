@@ -36,6 +36,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+
+    <!-- multi select  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
     <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- stylesheet  -->
@@ -155,10 +158,12 @@
   </section>
   <section class="search_details container">
     <div class=" search_details_info hotel_details">
-        <div class="row mt-2 mx-0 p-0 justify-content-space-between  align-items-center dating_inputs">
-            <div class="col-sm-12 col-md-6 col-xxl-2  col-xl-3 p-s-0 ">
+        <div class="row mt-2 mx-0 p-0 justify-content-space-between  align-items-end dating_inputs">
+          <div class="col-xl-8 col-sm-12 " id="adult_dtails">
+            <div class="row">
+              <div class="col-md-6 col-xl-4 col-sm-12 ">
                 <h5> visa request country </h5>
-                <select class="form-select" aria-label="Default select example" >
+                <select class="form-select" id="SelExample">
                     <option value="" disabled selected hidden>Choose...</option>
                     <option value="1">country 1 </option>
                     <option value="2"> country 2 </option>
@@ -172,9 +177,9 @@
                     <option value="10"> country 10</option>
                   </select>
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
+            <div class="col-md-6 col-xl-4 col-sm-12">
                 <h5>Nationality </h5>
-                <select class="form-select" aria-label="Default select example" >
+                <select class="form-select"  id="nationality" aria-label="Default select example" >
                     <option value="" disabled selected hidden>Choose...</option>
                     <option value="1">Nationality 1 </option>
                     <option value="2"> Nationality 2 </option>
@@ -188,9 +193,9 @@
                     <option value="10"> Nationality 10</option>
                   </select>
             </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
+            <div class="col-md-6 col-xl-4 col-sm-12">
               <h5> Visa type  </h5>
-              <select class="form-select" aria-label="Default select example" >
+              <select class="form-select" id="visa" aria-label="Default select example" >
                 <option value="" disabled selected hidden>Choose...</option>
                 <option value="1">type 1 </option>
                 <option value="2"> type 2 </option>
@@ -204,30 +209,41 @@
                 <option value="10"> type 10</option>
               </select>
             </div>
-            <div class="col-sm-12 col-md-6 col-xxl-2 col-xl-3">
-              <button class="btn adult_button">
-                <i class="fa-sharp fa-solid fa-plus"></i> Add Adult
-              </button>
             </div>
-            <div class="col-sm-12 col-md-12 col-xl-12 col-xxl-2"> 
-                <div class=" main" id="room_main">
-                    <button >
-                      search
-                     
-                    </button>
-                </div>
-           
-            </div>
+        
 
+          </div>
+          
+          <div class="col-xl-4 col-sm-12-">
+            <div class="row mb-2">
+              <div class="col-xl-6 col-sm-12">
+                <button class="btn adult_button" id="adultButton" onclick="addAdults()">
+                  <i class="fa-sharp fa-solid fa-plus"></i> Add Adult
+                </button>
+              </div>
+              <div class="col-xl-6 col-sm-12"> 
+                  <div class=" main" id="room_main">
+                      <button >
+                        search
+                      </button>
+                  </div>
+             
+              </div>
+            </div>
+          </div>
 
         </div>
 
     </div>
   </section>
 
- <section class="passenger_info search_details container">
+ <section class="passenger_info search_details container" id="passenger_section">
     <div class=" search_details_info passenger_info_details hotel_details">
-      <i class="fa-solid fa-xmark"></i>     
+      <i class="fa-solid fa-xmark"></i> 
+      <!-- <button id="remove" onclick="removePassenger()">
+      
+          </button> -->
+
          <div class="passenger_info_title">
             <h5> passenger 1</h5>
             <span>1200 LE</span>
@@ -419,6 +435,14 @@
   <!-- bootstrap 5.0v scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="./js/bootstrap/bootstrap.min.js"></script>
+  <!-- add adults  -->
+  <script src="./js/add-adults.js"></script>
+
+
+  <!-- multiple select with search  -->
+  <script src="  https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="   https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="./js/multiselect.js"></script>
 
 </body>
 </html>

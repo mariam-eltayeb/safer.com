@@ -3,11 +3,11 @@ var images = document.getElementsByTagName("img");
 for (var i = 0; i < images.length; i++) {
   images[i].onmouseover = function() {
     this.style.cursor = "hand";
-    this.style.borderColor = "red";
+    this.style.border = " 1px solid #1C4482";
   };
   images[i].onmouseout = function() {
     this.style.cursor = "pointer";
-    this.style.borderColor = "grey";
+    this.style.border = " 1px solid #1C4482";
   };
 }
 

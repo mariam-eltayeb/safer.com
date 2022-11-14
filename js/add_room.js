@@ -5,6 +5,7 @@ var roomBtn =document.getElementById('room_main');
 var hotelMargin =document.getElementById('hotel_search');
 
 
+
 function addInput() {
   var detailCounter = document.getElementsByClassName('details_content').length;
     var fields = ` <div class="row mx-0  details_content new" id="details-${detailCounter}"> \n\
@@ -49,9 +50,13 @@ function addInput() {
   formInput.insertAdjacentHTML ('beforeend',fields);
   roomBtn.style.flexDirection ="column-reverse";
   roomBtn.style.justifyContent ="space-between";
-  var margin = 70;
-  var total = margin+70;
-  hotelMargin.style.marginTop= `${total}+"px"`;
+
+  // var margin = 70;
+
+  // var total = margin+70;
+  // // total = margin;
+  // console.log (total);
+  // hotelMargin.style.marginTop= `${total}+"px"`;
 };
 
 function remove($event) {
