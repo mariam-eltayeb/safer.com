@@ -7,11 +7,12 @@
     background-color: white;
     box-shadow: 0px 2px 20px rgba(0,0,0,0.07);
     padding: 40px;
-    position: absolute;
-    top: -10%;
-    left: 10px;
-    width: 100%;
     border-radius: 10px;
+    padding-top: 10px;
+   
+}
+.set_margin {
+    margin-top: -5%;
 }
 .hotel_details #room_main{
     height: 100%;
@@ -53,13 +54,18 @@
     color: white;
     
 }
+.hotel_details .main > button:hover {
+    color: #1C4482;
+}
 @media (min-width:1399px) {
-    .search_details .search_details_info .sepcial_width>* {
-        width: 248px !important;
+    .search_details .search_details_info .sepcial_width>* ,
+    .dating_inputs>* {
+        width: 242px !important;
     }
 } 
  @media (min-width:991px) and (max-width:1398px) {
-    .search_details .search_details_info .sepcial_width>* {
+    .search_details .search_details_info .sepcial_width>*,
+    .dating_inputs>*  {
         width: 210px !important;
     }
 } 

@@ -83,8 +83,8 @@ function  addAdults() {
 
 
 //  passenger delete 
-// var passengerInfo =document.getElementsByClassName('passenger_info_details');
+var passengerInfo =document.getElementsByClassName('passenger_info');
 
-// function removePassenger() {
-//     passengerInfo.style.display="none";
-// }
+function removePassenger($event) {
+  $event.closest('.passenger_info').remove();
+}

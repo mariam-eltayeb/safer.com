@@ -10,13 +10,14 @@
 .imgStyle {
     max-width:197px ;
     max-height: 140px;
-    transition: 1s all ease;
+    transition: 0.5s all ease;
     margin-bottom: 10px;
     margin-right: 10px;
   }
   .imgStyle:hover {
 
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    transform: scale(1.1);
   }
    
 .tour_info .titles  {
@@ -70,6 +71,7 @@
     border: 1px solid #1C4482;
     font-size: 16px;
     margin-right: 10px;
+    cursor: pointer;
 
 }
 .tour_info .titles  .sharing_icons i:hover {

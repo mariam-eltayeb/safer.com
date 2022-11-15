@@ -157,8 +157,8 @@
     </div> 
   </section>
   <section class="search_details container">
-    <div class=" search_details_info hotel_details">
-        <div class="row mt-2 mx-0 p-0 justify-content-space-between  align-items-end dating_inputs">
+    <div class=" search_details_info hotel_details set_margin">
+        <div class="row mt-2 mx-0 p-0 justify-content-space-between  align-items-end ">
           <div class="col-xl-8 col-sm-12 " id="adult_dtails">
             <div class="row">
               <div class="col-md-6 col-xl-4 col-sm-12 ">
@@ -215,7 +215,7 @@
           </div>
           
           <div class="col-xl-4 col-sm-12-">
-            <div class="row mb-2">
+            <div class="row mb-1">
               <div class="col-xl-6 col-sm-12">
                 <button class="btn adult_button" id="adultButton" onclick="addAdults()">
                   <i class="fa-sharp fa-solid fa-plus"></i> Add Adult
@@ -239,10 +239,10 @@
 
  <section class="passenger_info search_details container" id="passenger_section">
     <div class=" search_details_info passenger_info_details hotel_details">
-      <i class="fa-solid fa-xmark"></i> 
-      <!-- <button id="remove" onclick="removePassenger()">
-      
-          </button> -->
+
+      <button id="remove" onclick="removePassenger(this)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
 
          <div class="passenger_info_title">
             <h5> passenger 1</h5>
@@ -282,7 +282,9 @@
 
  <section class="passenger_info search_details container">
     <div class=" search_details_info passenger_info_details hotel_details">
-      <i class="fa-solid fa-xmark"></i>    
+      <button id="remove" onclick="removePassenger(this)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <div class="passenger_info_title">
             <h5> passenger 2</h5>
             <span>1200 LE</span>
@@ -317,6 +319,17 @@
        </div>
 
     </div>
+  
+ </section>
+ <section class="totals_section container">
+  <div class="total">
+    <button>
+       <a href="#">Continue</a>
+    </button>
+    <span>
+      Total price:  <span> 2400 LE</span>
+    </span>
+  </div>
  </section>
 
   <!-- single date picker -->
@@ -425,6 +438,7 @@
         
       </footer>
     </section>
+    <!-- <input class="custom-file-input" type="file"> -->
   <!-- footer -->
  
   <!-- copy right section -->
