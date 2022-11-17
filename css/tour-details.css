@@ -8,11 +8,14 @@
     max-height: 360px;
 }
 .imgStyle {
-    max-width:197px ;
+    max-width:200px ;
     max-height: 140px;
     transition: 0.5s all ease;
     margin-bottom: 10px;
-    margin-right: 10px;
+    padding-right: 10px;
+  }
+  #divId img:nth-of-type(3) {
+    padding-right: 0px;
   }
   .imgStyle:hover {
 

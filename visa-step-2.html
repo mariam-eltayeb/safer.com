@@ -41,7 +41,7 @@
     <!-- stylesheet  -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/visa-search.css">
+    <link rel="stylesheet" href="./css/visa-step-2.css">
     <!-- icon -->
     <link rel="icon" href="./images/homePage/logo.webp">
     <title> Visa search </title>
@@ -139,99 +139,82 @@
     <!-- slider -->
     <div class="slider_section">
         <div class="slider_details">
-          <h1> VISA Search  </h1>
+          <h1> VISA </h1>
            <div class="tabs">
             <span>
                 <a href="./index.html">Home</a>
             </span>
             <span>></span>
             <span>
-              VISA search
+              VISA 
             </span>
            </div>
         </div>
     </div> 
   </section>
-  <section class="search_details container">
-    <div class=" search_details_info hotel_details set_margin">
-        <div class="row mx-0 p-0 sepcial_width">
-            <div class="col-sm-12 col-md-6 col-xxl-2  col-xl-3 p-s-0 ">
-                <h5> reservation no</h5>
-                <input type="number" name="reservation-number" placeholder="Reservation No." min="0" oninput="validity.valid||(value='')" />
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
-                <h5>passenger name </h5>
-                <input type="text" name="passenger-name" placeholder="Passenger name"  />
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
-                <h5>passport no</h5>
-                <input type="number" name="passport-number" placeholder="Passport No."  min="0" oninput="validity.valid||(value='')" />
-            </div>
-            <div class="col-sm-12 col-md-6 col-xxl-2 col-xl-3">
+   <section  class="container passenger_data">
+    <h5>  You are at the final step to complete the reservation.</h5>
 
-                <h5> status </h5>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>1</option>
-                    <option value="1">2 </option>
-                    <option value="2"> 3</option>
-                    <option value="3">4</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                
-            </div>
-        </div>
-        <div class="row mt-2 mx-0 p-0 justify-content-space-between  dating_inputs">
-            <div class="col-sm-12 col-md-6 col-xxl-2  col-xl-3 p-s-0 ">
-                <h5> travel date </h5>
-                <div class="calender">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  <!-- <input type="date" name="" id="">
-                  <input type="datetime-local" name="" id=""> -->
-                  <input type="text" placeholder="Travel date (start)"  onfocus="(this.type='date')">
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
-              <h5> travel date (End) </h5>
-                 <div class="calender">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  <input type="text"  onfocus="(this.type='date')" placeholder="Travel date (end)">  
-                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 col-xxl-2">
-              <h5> Application date (start) </h5>
-              <div class="calender">
-                <i class="fa-solid fa-calendar-days"></i>
-                <input type="text" placeholder="Application date (start)" onfocus="(this.type='date')" >
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xxl-2 col-xl-3">
-              <h5> Application date  (End) </h5>
-              <div class="calender">
-               <i class="fa-solid fa-calendar-days"></i>
-               <input type="text" placeholder="Application date  (end)" onfocus="(this.type='date')">  
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-xl-12 col-xxl-2"> 
-                <div class=" main" id="room_main">
-                    <button class="">
-                      search
-                     
-                    </button>
-                </div>
-           
-            </div>
-
-
-        </div>
-
+    <div class="passenger_info">
+        <h6> passenger 1 </h6>
+        <table class="passenger_table">
+            <tr>
+                 <td>
+                    name
+                 </td>
+                 <td>
+                    Surname 
+                 </td>
+                 <td>
+                    Nationality
+                 </td>
+                 <td>
+                     passport no 
+                 </td>
+                 <td>
+                    visa country 
+                 </td>
+                 <td>
+                    Visa
+                 </td>
+                 <td>
+                    travel date 
+                 </td>
+                 <td>
+                     total
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    ahmed
+                </td>
+                <td> ibrahim
+                </td>
+                <td>
+                    egypt
+                </td>
+                <td>
+                    2541284558
+                </td>
+                <td>
+                    United Arab Emirates
+                </td>
+                <td>
+                    Insurance
+                </td>
+                <td>
+                    20.10.2022
+                </td>
+                <td>
+                    15,39 EUR
+                </td>
+            </tr>
+        </table>
     </div>
-</section>
+    <span class=" grand_total">
+         grand total : <span>30.78 EUR</span>
+    </span>
+   </section>
 
     <!--  ending page  -->
     <section class="ending">
@@ -341,13 +324,6 @@
   <!-- bootstrap 5.0v scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="./js/bootstrap/bootstrap.min.js"></script>
-  <!-- single date picker -->
 
-  <!-- date picker range links -->
-  <!-- <script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="./js/momnet.js"></script>
-  <script src="./js/bootstrap-datepicker.min.js"></script>
-  <script src="./js/date_picker.js"></script> -->
- 
 </body>
 </html>

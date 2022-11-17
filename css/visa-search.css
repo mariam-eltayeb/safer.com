@@ -57,6 +57,19 @@
 .hotel_details .main > button:hover {
     color: #1C4482;
 }
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+  visibility: none;
+  color: transparent;
+  background-color: transparent;
+  opacity: 0;
+}
+
+
 @media (min-width:1399px) {
     .search_details .search_details_info .sepcial_width>* ,
     .dating_inputs>* {

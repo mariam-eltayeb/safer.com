@@ -10,7 +10,9 @@ function  addAdults() {
     var adultsCounter = document.getElementsByClassName('adults_fileds').length;
     var fields = `
     <div class="row">
+
     <div class="col-xl-12 col-sm-12 adults_fileds " id="adult_dtails-${adultsCounter}"> \n\
+    <hr>
     <div class="remove">
         <button id="removeBtn" onclick="remove(this)">
          <i class="fa-solid fa-trash-can"></i>
@@ -19,7 +21,7 @@ function  addAdults() {
     <div class="row">
       <div class="col-md-6 col-xl-4 col-sm-12 ">
         <h5> visa request country </h5>
-        <select class="form-select" aria-label="Default select example" >
+        <select class="form-select SelExample"  id="SelExample"" >
             <option value="" disabled selected hidden>Choose...</option>
             <option value="1">country 1 </option>
             <option value="2"> country 2 </option>
@@ -35,7 +37,7 @@ function  addAdults() {
     </div>
     <div class="col-md-6 col-xl-4 col-sm-12">
         <h5>Nationality </h5>
-        <select class="form-select" aria-label="Default select example" >
+        <select class="form-select nationality"  id="nationality" >
             <option value="" disabled selected hidden>Choose...</option>
             <option value="1">Nationality 1 </option>
             <option value="2"> Nationality 2 </option>
@@ -51,7 +53,7 @@ function  addAdults() {
     </div>
     <div class="col-md-6 col-xl-4 col-sm-12">
       <h5> Visa type  </h5>
-      <select class="form-select" aria-label="Default select example" >
+      <select class="form-select " id="visa" >
         <option value="" disabled selected hidden>Choose...</option>
         <option value="1">type 1 </option>
         <option value="2"> type 2 </option>
@@ -65,8 +67,9 @@ function  addAdults() {
         <option value="10"> type 10</option>
       </select>
     </div>
-    </div>
 
+    </div>
+    
 
   </div> `
   adultInput.insertAdjacentHTML ('beforeend',fields);

@@ -1,8 +1,8 @@
 $(document).ready(function(){
  
     // Initialize select2
-    $("#SelExample").select2();
-    $("#SelExample").select2("val", "4");
+    $(".SelExample").select2();
+    $(".SelExample").select2("val", "1");
 //   $('#SelExample option:selected').text('Vizag');
     // Read selected option
     // $('#but_read').click(function(){
@@ -15,8 +15,8 @@ $(document).ready(function(){
   $(document).ready(function(){
  
     // Initialize select2
-    $("#nationality").select2();
-    $("#nationality").select2("val", "4");
+    $(".nationality").select2();
+    $(".nationality").select2("val", "1");
 //   $('#SelExample option:selected').text('Vizag');
     // Read selected option
     // $('#but_read').click(function(){
@@ -29,8 +29,8 @@ $(document).ready(function(){
   $(document).ready(function(){
  
     // Initialize select2
-    $("#visa").select2();
-    $("#visa").select2("val", "4");
+    $(".visa").select2();
+    $(".visa").select2("val", "1");
 //   $('#SelExample option:selected').text('Vizag');
     // Read selected option
     // $('#but_read').click(function(){

@@ -2421,6 +2421,9 @@ top: -4%;
   .explore_position {
     position: static;
   }
+  .sign_up a::after{
+    left: -10px;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1205px){
 
