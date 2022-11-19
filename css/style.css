@@ -2225,7 +2225,20 @@ top: -4%;
 }
 
 /* mobile screen */
-
+@media (min-width: 767px){
+  hr {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px){
+  .new .remove {
+    top: 13px;
+  }
+  .details_content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+} 
 @media (min-width: 320px) and (max-width: 575px) {
   .navbar::after {
   display: none;

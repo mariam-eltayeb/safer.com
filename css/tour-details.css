@@ -100,6 +100,19 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 15px;
+    position: relative;
+}
+.tour_info_details::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #7e7e7e2e;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+}
+.after_details:after{
+    display: none;
 }
 .tour_info_details  img {
     width: 50px;
@@ -364,12 +377,71 @@
 .overlay:hover::after{
     display: block;
 }
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+/* body{ margin: 20px; } */
+/* h1 { font-size: 1.5em; margin: 10px; } */
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+.rating:hover {
+    cursor: pointer;
+}
+.rating input:hover,
+.rating label:hover  {
+    cursor: pointer;
+}
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  cursor: default;
+  cursor: pointer; 
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+  cursor: pointer; 
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+ cursor: pointer; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700; cursor: pointer;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;cursor: pointer;  } 
+
+
 @media (min-width: 991px) and (max-width: 1400px) {
     .imgStyle {
         max-width: 166px;
     }
 }
-
+@media (min-width: 767px) and (max-width: 1199px) 
+{
+    .second_details::after {
+        display: none;
+    }
+}
 @media (min-width: 320px) and (max-width: 767px) {
     .tour_info .titles .sharing_icons{
         top: 27%;
@@ -403,6 +475,16 @@
     }
     .imgStyle {
         max-width: 146px;
+    }
+    .tour_info_details {
+        margin-bottom: 40px;
+    }
+    .tour_info_details::after {
+        width: 50%;
+        height: 2px;
+        top: 110%;
+        left: 0px;
+        margin: auto;
     }
 }
 @media (min-width: 320px)  and (max-width:420px) {

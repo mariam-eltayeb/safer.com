@@ -9,7 +9,9 @@ var hotelMargin =document.getElementById('hotel_search');
 function addInput() {
   var detailCounter = document.getElementsByClassName('details_content').length;
     var fields = ` <div class="row mx-0  details_content new" id="details-${detailCounter}"> \n\
+    <hr>
     <div class="col-xl-6 col-md-12 col-sm-12 ">\n\
+    
     <div class="remove">\n\
     <button id="removeBtn" onclick="remove(this)">\n\
     <i class="fa-solid fa-trash-can"></i>\n\
@@ -30,7 +32,7 @@ function addInput() {
           <option value="10">10</option>\n\
         </select>\n\
       </div>\n\
-      <div class="col-xl-6 col-md-12 col-sm-12">\n\
+      <div class="col-xl-6 col-md-12 col-sm-12 ">\n\
         <h5> childs</h5>\n\
         <select class="form-select" aria-label="Default select example">\n\
             <option selected>1</option>\n\
