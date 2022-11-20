@@ -347,7 +347,39 @@ input[type=range] {
   .line{
     width: initial !important;
   }
-
+  .dating_input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 12px;
+    padding-left: 35px;
+    padding-right: 5px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+      display: block;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+    visibility: none;
+    color: transparent;
+    background-color: transparent;
+    opacity: 0;
+  }
+  .dating_input:focus-visible {
+    border: 1px solid #ced4da;
+    outline: none;
+  }
 @media (min-width: 992px){
     .filter_labels {
        position: static;
@@ -361,19 +393,14 @@ input[type=range] {
         margin-top: 55px;
     }
     .search_tours {
-        position: absolute;
-        top: 51px;
-        left: 20px;
         background-color: white;
-        width: 30%;
+        width: 100%;
         padding: 30px;
         display: none;
-        z-index: 33;
+        margin-top: 15px;
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}
+
 @media (min-width: 768px) and (max-width: 991px)  {
    
     .filtered_button{
@@ -393,14 +420,11 @@ input[type=range] {
        background-color: white;
     }
     .search_tours {
-        position: absolute;
-        top: 51px;
-        left: 20px;
         background-color: white;
-        width: 30%;
+        width: 100%;
         padding: 30px;
         display: none;
-        z-index: 33;
+        margin-top: 15px;
     }
     .filters {
         flex-wrap: wrap;
@@ -409,6 +433,9 @@ input[type=range] {
     .setted_tour_cards {
         flex-direction: column;
     }
+    .setted_tour_cards > a {
+        width: 100%;
+    } 
     .setted_tour_cards img {
         max-width: 100%;
         width: 100%;
@@ -423,9 +450,18 @@ input[type=range] {
     .booking_info .cancelation {
         margin-left: 20px;
     }
+    .setted_tour_cards .image_overlay::after {
+        width: 100%;
+    }
+    .card_image {
+        width: 100%;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .setted_tour_cards .image_overlay::after {
+        width: 100%;
+    }
     .fiter_title {
         flex-direction: column;
     }
@@ -452,15 +488,17 @@ input[type=range] {
     .setted_tour_cards {
     flex-direction: column;
     }
+    .setted_tour_cards> a {
+        width: 100%;
+    }
     .search_tours {
-        position: absolute;
-        top: 55px;
-        left: 20px;
+       
         background-color: white;
-        width: 80%;
+        width: 100%;
         padding: 30px;
         display: none;
-        z-index: 33;
+        margin: auto;
+        margin-top: 15px;
     }
     .filters {
         flex-wrap: wrap;
@@ -482,7 +520,9 @@ input[type=range] {
         flex-wrap: wrap;
 
     }
-    
+    .booking_info > a {
+        width: 100%;
+    }
 
     .row>* {
         padding: 0px;
@@ -508,6 +548,9 @@ input[type=range] {
     .booking_info .cancelation {
         width: 50%;
         margin-right: 0px;
+    }
+    .card_image {
+        width: 100%;
     }
     
 }

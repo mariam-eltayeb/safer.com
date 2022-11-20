@@ -40,13 +40,13 @@
 .tour_info .titles:hover h6 {
    text-decoration: underline;
 }
-.tour_info .titles span {
+.tour_info .titles > span {
     font-weight: 300;
     font-size: 17px;
     color: #1C4482;
     text-transform: capitalize;
     margin-bottom: 5px;
-    display: inline-block;
+    display: block;
 }
 .tour_info .titles span span {
     padding: 10px;
@@ -377,17 +377,18 @@
 .overlay:hover::after{
     display: block;
 }
+
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 fieldset, label { margin: 0; padding: 0; }
 /* body{ margin: 20px; } */
 /* h1 { font-size: 1.5em; margin: 10px; } */
 
-/****** Style Star Rating Widget *****/
+/****** Style Star Rating Widget **** */
 
 .rating { 
   border: none;
-  float: left;
+  /* float: left; */
 }
 .rating:hover {
     cursor: pointer;
@@ -423,12 +424,12 @@ fieldset, label { margin: 0; padding: 0; }
 
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700; cursor: pointer;  } /* hover previous stars in list */
+.rating:not(:checked) > label:hover ~ label { color: #F97150; cursor: pointer;  } /* hover previous stars in list */
 
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;cursor: pointer;  } 
+.rating > input:checked ~ label:hover ~ label { color: #e37458c0;cursor: pointer;  } 
 
 
 @media (min-width: 991px) and (max-width: 1400px) {
