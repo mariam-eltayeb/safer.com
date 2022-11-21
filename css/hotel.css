@@ -41,8 +41,9 @@
     color: #7E7E7E;
     z-index: 10;
 }
-.setted_info .card_info span:hover {
+.setted_info .card_info span:hover i {
     color: #1C4482;
+    font-weight: 600;
 
 }
 .setted_info > span span {

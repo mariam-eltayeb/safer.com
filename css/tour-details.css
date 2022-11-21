@@ -17,11 +17,10 @@
   #divId img:nth-of-type(3) {
     padding-right: 0px;
   }
-  .imgStyle:hover {
-
+  /* .imgStyle:hover {
     /* border: 1px solid grey; */
-    transform: scale(1.1);
-  }
+    /* transform: scale(1.1);
+  }  */
    
 .tour_info .titles  {
     position: relative;
@@ -419,7 +418,31 @@ fieldset, label { margin: 0; padding: 0; }
  float: right; 
  cursor: pointer; 
 }
-
+/*  slider */
+.image_cover {
+    position: relative;
+}
+.image_cover #previous ,.image_cover #next {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.385);
+   
+    border: 1px solid #1C4482;
+    padding: 5px 10px;
+    position: absolute;
+    top: 45%;
+} 
+.image_cover #previous {
+    left: 8px;
+}
+.image_cover #next {
+    right: 8px;
+}
+.image_cover #previous ,.image_cover #next i {
+    color: #1C4482;
+}
+.image_cover #previous:hover ,.image_cover #next:hover {
+    background-color: white;
+}
 /***** CSS Magic to Highlight Stars on Hover *****/
 
 .rating > input:checked ~ label, /* show gold star when clicked */

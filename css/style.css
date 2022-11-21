@@ -2413,10 +2413,13 @@ top: -4%;
   .explore .explore_details .slick-slider .slick-next {
   
     top: -3%;
-    left: 100%;
+    left: 97%;
   }
   .hotel_details .main div a {
     font-size: 13px;
+  }
+  .blog_section {
+  overflow: hidden;
   }
 }
 @media (min-width: 320px) and (max-width: 574px){
