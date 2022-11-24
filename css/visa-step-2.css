@@ -19,9 +19,9 @@
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-.passenger_table {
+/* .passenger_table {
     box-shadow: 0px 2px 20px rgba(0,0,0,0.07);
-}
+} */
 .passenger_table .info {
     display: flex;
     align-items: center;
@@ -29,14 +29,7 @@
     flex-direction: column;
     
 }
-.passenger_table .info span {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 15px;
 
-    /* height: 65px; */
-}
 .passenger_table .info .name{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -49,48 +42,31 @@
 
 }
 
-.passenger_table .info span:nth-of-type(1) {
-    font-size: 15px;
-    text-transform: capitalize;
-    background-color: #1C4482;
-    color: white;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.passenger_table .info span:nth-of-type(2){
+.passenger_table .info span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
     font-size: 14px;
     background-color: white;
+       box-shadow: 0px 0px 2px #00000029;
     /* box-shadow: 0px 2px 20px rgba(0,0,0,0.07); */
     color: #1C4482;
     font-weight: 600;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
-.passenger_table tr {
-    border-radius: 10px;
-   line-height: 2.5;
-   height: 50px;
-
-}
-.passenger_table tr td {
-    text-align: center;
+.passenger_table .info .main_row {
     font-size: 15px;
     text-transform: capitalize;
-
-}
-.passenger_table tr:first-of-type{
     background-color: #1C4482;
     color: white;
-    text-align: center;
-    margin-bottom: 10px;
     font-weight: 700;
+    margin-bottom: 10px;
+   box-shadow: 0px 0px 2px #00000029;
+
 }
-/* .passenger_table tr:first-of-type td */
-.passenger_table tr:nth-of-type(2) {
-    background-color: white;
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.07);
-    color: #1C4482;
-    font-weight: 600;
-}
+
 .grand_total{
     display: block;
     text-align: right;
@@ -113,21 +89,23 @@
 }
 .payment_option .visa_info .visa {
     padding: 10px 20px;
-    border: 1px solid #7e7e7e78;
+    /* border: 1px solid #7e7e7e78; */
     border-radius: 10px;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .payment_option .visa_info .visa .visa_details {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
-
+    width: 100%;
+    cursor: pointer;
 }
 .payment_option .visa_info .visa .visa_details label {
     font-size: 17px;
-    font-size: 500;
+    font-weight: 500;
     text-transform: capitalize;
     color: #1C4482;
     margin-bottom: 3px;

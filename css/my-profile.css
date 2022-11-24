@@ -68,8 +68,11 @@
     color: #1C4482;
     text-transform: capitalize;
     font-weight: 700;
+    margin: 0px;
 }
-
+.profile_heading i {
+    margin-right: 5px;
+}
 .profile_change {
     display: flex;
     align-items: center;
@@ -205,4 +208,82 @@
     background-color: #7E7E7E;
     color: white;
 
+}
+.nav-pills .nav-link {
+    padding-top: 0px;
+}
+.tab-content>.active {
+    width: 100%;
+}
+/* orders tab  */
+.orders h6 {
+    margin-bottom: 30px;
+}
+.rejected {
+    background-color:#FF0000 !important; 
+    color: white !important;
+}
+.passenger_table .info span{
+    margin-bottom: 15px;
+}
+
+/* payment method tab */
+.payment >span {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #7E7E7E;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    display: block;
+}
+.payment_option .visa_info .visa {
+justify-content: space-between;
+box-shadow: 0px 0px 3px #00000029;
+}
+.payment_option .visa_info .visa .info {
+    display: flex;
+    align-items: center;
+    width: 80%;
+
+}
+.edits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delete {
+    color: #FF0000;
+}
+
+.edits i {
+    margin-right: 5px;
+}
+.edits div {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+ 
+}
+.edits div:nth-of-type(1) {
+    color: #1C4482;
+    margin-right: 20px;
+}
+.delete i {
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #FF0000;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .payment_option .visa_info .visa {
+        flex-wrap: wrap;
+    }
+
+    .payment_option .visa_info .visa .info{
+        margin-bottom: 10px;
+    }
+    .payment_option .visa_info .visa .info{
+        width: fit-content;
+    } 
 }
