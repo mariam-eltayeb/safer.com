@@ -45,6 +45,7 @@
   <link rel="stylesheet" href="./videos/grt-youtube-popup.css">
 
   <!-- stylesheet  -->
+  <link rel="stylesheet" href="./css/tour-details.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- icon -->
   <link rel="icon" href="./images/homePage/logo.webp">
@@ -235,7 +236,7 @@
                                         <option value="10">10</option>
                                       </select>
                                     </div>
-                              </div>
+                              </div>  
                             </div>
                       
                             <!-- <div class="col-sm-12 col-md-6 col-xl-2">
@@ -923,9 +924,9 @@
       <div class="row mx-0">
         <div class=" col-xl-6 col- md-6 col-sm-12 p-0">
           <div class="images">
-            <button type="button"class="youtube-link" youtubeid="yPu6qV5byu4" >
+            <a class="popup-youtube" href="https://www.youtube.com/watch?v=bY-mOdgz7zQ">
               <img src="./images/homePage/play_button.webp" alt=" video play button">
-            </button>
+            </a>
           </div>
         </div>
         <div class=" col-xl-6 col- md-6 col-sm-12 p-0">
@@ -978,9 +979,9 @@
 
             <img src="./images/homePage/slider-mask.webp" alt="image mask">
 
-            <button type="button" class="youtube-link" youtubeid="yPu6qV5byu4" >
+            <a class="popup-youtube" href="https://www.youtube.com/watch?v=bY-mOdgz7zQ">
               <img src="./images/homePage/play_button.webp" alt=" video play button">
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -1481,22 +1482,26 @@
   <script src="./js/momnet.js"></script>
   <script src="./js/bootstrap-datepicker.min.js"></script>
   <script src="./js/date_picker.js"></script>
+
   <!-- Slick.s library -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
   <!-- explore carsoul for turkey section -->
   <script src="./js/explore_carsoul.js"></script>
+
   <!-- Github button for demo page -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   <!-- GRT Youtube Popup -->
-  <script src="./videos/grt-youtube-popup.js"></script>
+  <script src="http://dimsemenov.com/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
   <script>
-    $(".youtube-link").grtyoutube({
-          autoPlay:true,
-          theme: "dark"
-        });
-  </script>
+   
+   $(document).ready(function() {
+     $('.popup-youtube').magnificPopup({
+       type: 'iframe'
+     });
+   });
+   </script>
  
   <!-- adding room -->
   <script src="./js/add_room.js"></script>

@@ -19,37 +19,34 @@ function changeImageOnClick(event) {
     mainImage.src = targetElement.getAttribute("src");
   }
 }
-//  sider for image 
-var images = [ "tour-details-1.webp","tour-details-2.webp","tour-details-3.webp" ];
-var slider = document.getElementById('mainImage');
-var prevoiusButton = document.getElementById('previous');
-var nextButton = document.getElementById('next');
-var imageIndex = 0;
 
-nextButton.addEventListener('click' , function (){
-    imageIndex++;
-    link = "./images/tour-details/" + images[imageIndex];
-    slider.setAttribute('src' , link);
 
-    if(imageIndex == images.length - 1 ){
-        nextButton.setAttribute('disabled','');
-        prevoiusButton.removeAttribute('disabled','')
-    }
-    else{
-        prevoiusButton.removeAttribute('disabled','')
-    }
-})
+// //  slider for image 
 
-prevoiusButton.addEventListener('click' , function (){
-    imageIndex--;
-    link = "./images/tour-details/" + images[imageIndex];
-    slider.setAttribute('src' , link);
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    if(imageIndex == 0 ){
-        prevoiusButton.setAttribute('disabled','');
-        nextButton.removeAttribute('disabled','')
-    }
-    else{
-        nextButton.removeAttribute('disabled','')
-    }
-})
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
