@@ -80,20 +80,23 @@
                   <a href="./tours.html">tours</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="#">transfer</a>
+                  <a href="./visa-search.html">transfer</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="#">visa</a>
+                  <a href="./visa-search.html">visa</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="./contatcs.html">contatc</a>
+                  <a href="./contatcs.html">contact</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="sign-in.html">sign in</a>
+                  <a href="./my-profile.html">profile</a>
                 </button>
                 <button class="offcan_buttons">
+                  <a href="./sign-in.html"> logout</a>
+                </button>
+                <!-- <button class="offcan_buttons">
                   <a href="./sign-up.html">Sign up</a>
-                </button>
+                </button> -->
           </div>
         </div>
           <!-- end of oofcanvas  -->
@@ -114,10 +117,10 @@
               <a href = "./tours.html" class="links hybrid">tours </a>
             </li>
             <li>
-              <a href = "#" class="links hybrid">transfer </a>
+              <a href = "./visa-search.html" class="links hybrid">transfer </a>
             </li>
             <li>
-              <a href = "#" class="links hybrid">visa</a>
+              <a href = "./visa-search.html" class="links hybrid">visa</a>
             </li>
             <li>
               <a href = "./contatcs.html" class="links hybrid">contact us</a>
@@ -127,12 +130,12 @@
                 <span class="line">  <a href="./my-profile.html">
                     <img src="./images/my-profile/profile_picture.webp" alt="profile image">
                 </a> </span>
-                <li>
-                  <a href = "sign-in.html" class="links hybrid"> Ghada Mohamed <i class="fa-solid fa-angle-down"></i></a>
+                <li class=" profile_name">
+                  <button class="links hybrid btn profile_name_button" onclick="opendropdown()"> Ghada Mohamed <i class="fa-solid fa-angle-down"></i></button>
+                    <div class="logout_dropdown" id="logout_dropdown">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
+                    </div>
                 </li>
-                <!-- <li class="sign_up">
-                  <a href = "./sign-up.html" class="links hybrid">sign up</a>
-                </li> -->
               </ul>
             </div>
           </ul>
@@ -168,8 +171,28 @@
                       <button class="nav-link" id="v-pills-favorite-tab" data-bs-toggle="pill" data-bs-target="#v-pills-favorite" type="button" role="tab" aria-controls="v-pills-favorite" aria-selected="false"> <i class="fa-regular fa-heart"></i>favorite </button>
                       <button class="nav-link" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false"><i class="fa-regular fa-file-lines"></i> My orders </button>
                       <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment" aria-selected="false"><i class="fa-regular fa-file-lines"></i> My payment method </button>
-                      <button class="nav-link" id="v-pills-logout-tab" data-bs-toggle="pill" data-bs-target="#v-pills-logout" type="button" role="tab" aria-controls="v-pills-logout" aria-selected="false"><i class="fa-solid fa-arrow-right-from-bracket"></i> log out  </button>
+                      <button type="button" class="btn logout_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
+                      </button>
 
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content log_popup">
+                            <div class="modal-header">
+                              <h5 class="modal-title log_title" id="staticBackdropLabel">Log out </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body log_popup_info">
+                              Oh no! You are leaving... <br>
+                              Are you Sure ?
+                            </div>
+                            <div class="modal-footer log_popup_button">
+                              <button type="button " class="btn">Log out </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                    
                   </div>
@@ -1151,6 +1174,6 @@
   <!-- bootstrap 5.0v scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="./js/bootstrap/bootstrap.min.js"></script>
-
+  <script src="./js/main.js"></script>
 </body>
 </html>
