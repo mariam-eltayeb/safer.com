@@ -445,8 +445,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
 }
 .hotel_details .main div {
   /* position: absolute;
@@ -559,20 +557,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 500;
   color: white;
 }
- .place_1{
+.card:hover .explore_card.place_1 {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)) , url("./../images/homePage/places/place-1.webp");
-
 }
 
- .place_2{
+.card:hover .explore_card.place_2 {
+
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)) , url("./../images/homePage/places/place-2.webp");
 
 }
- .place_3{
+.card:hover .explore_card.place_3{
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)) , url("./../images/homePage/places/place-3.webp");
 
 }
- .place_4{
+.card:hover .explore_card.place_4{
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.3),hsla(0, 0%, 0%, 0.3)) , url("./../images/homePage/places/place-4.webp");
 
 }
@@ -580,16 +578,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
  transition: 3s all ease-in-out;
 }
 
-.card:hover .explore_card.place_1 {
+.place_1 {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0)) , url("./../images/homePage/places/place-1.webp");
 }
-.card:hover .explore_card.place_2 {
+.place_2 {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0)) , url("./../images/homePage/places/place-2.webp");
 }
-.card:hover .explore_card.place_3 {
+.place_3 {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0)) , url("./../images/homePage/places/place-3.webp");
 }
-.card:hover .explore_card.place_4 {
+.place_4 {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0)) , url("./../images/homePage/places/place-4.webp");
 }
 /*  slick carsoul for explore turkey section */
@@ -2903,4 +2901,156 @@ top: -4%;
   .slider_section {
   padding-top:50px;
   }
+}
+
+
+.form-group input[type="text"] {
+  width: 100%;
+  text-align: right;
+}
+  .glyphicon {
+    color: #0D1B3E;
+    display: block;
+}
+.counter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.counter_content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.counter label {
+  color: #1C4482;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.counter_content div {
+  height: 100%;
+  /* color: #000; */
+  /* background-color: #042C6B; */
+}
+.counter_content div button {
+  color: #0D1B3E;
+  /* padding: 0px; */
+}
+.form-group input[type="text"] {
+  width: 25%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+/* .input-group>.form-control, .input-group>.form-select{
+  flex:none;
+} */
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+ flex: none;
+
+}
+.rooms {
+  position: relative;
+  text-align: center;
+}
+.info {
+  text-align: start;
+  font-size: 13px;
+}
+.add_new {
+  background-color: white;
+  padding: 30px;
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  /* left: 0px; */
+  display: none;
+  z-index: 999;
+}
+.add_new >* {
+  width: 100%;
+}
+.done_button {
+  border: 1px solid #1C4482;
+  color: #1C4482;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.done_button:hover {
+  background-color: #1C4482;
+  color: white;
+}
+.btn-check:focus+.btn, .btn:focus {
+  box-shadow: none;
+}
+.show {
+  display: block;
+  
+}
+
+/* explore links */
+.explore_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  margin-top: 30px;
+  position: relative;
+  z-index: 9999999;
+}
+.explore_links button{
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.explore_links button i {
+  font-size: 20px;
+  color: white;
+
+
+}
+.explore_links button:hover {
+  background-color: white;
+  
+}
+.explore_links button:hover i {
+  color: #02265F;
+}
+.explore .explore_card:hover .header_info h5,
+.explore .explore_card:hover .header_info span  {
+opacity: 0.5;
+}
+.explore .explore_card:hover .explore_links {
+  display: flex;
+}
+/* .explore .explore_card:hover .header_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+#years ,#tabYears ,
+#travelYears {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#years select ,
+#tabYears select ,
+#travelYears select  {
+  width: calc( 100% / 2 - 5px );
+  margin-right: 5px;
+}
+
+/* margin-inline-start >> left
+margin-inline-end >> right */
+
+
+/* langugae button */
+.language {
+  position: absolute;
+  right: -3%;
 }

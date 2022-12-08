@@ -86,13 +86,16 @@
                   <a href="./visa-search.html">visa</a>
                 </button>
                 <button class="offcan_buttons">
-                  <a href="./contatcs.html">contatc</a>
+                  <a href="./contatcs.html">contact</a>
                 </button>
                 <button class="offcan_buttons">
                   <a href="./sign-in.html">sign in</a>
                 </button>
                 <button class="offcan_buttons">
                   <a href="./sign-up.html">Sign up</a>
+                </button>
+                <button class="offcan_buttons">
+                  <a href="#">language-Arabic</a>
                 </button>
           </div>
         </div>
@@ -133,6 +136,9 @@
                 </li>
               </ul>
             </div>
+            <li class="language">
+              <a href = "#" class="links hybrid"><i class="fa-solid fa-globe"></i></a>
+            </li>
           </ul>
         </div>
           <!-- end of navigation links  -->
@@ -201,73 +207,72 @@
                                   </select>
                             </div>
                             <div class="col-sm-12 col-md-6 col-xl-4">
-                              <div class="row mx-0 " id="details">
-                                <div class="col-xl-6 col-md-12 col-sm-12 ">
-                                  
-                                  <h5> adults</h5>
-                                  <select class="form-select" aria-label="Default select example">
-                                      <option selected>1</option>
-                                      <option value="1">2 </option>
-                                      <option value="2"> 3</option>
-                                      <option value="3">4</option>
-                                      <option value="4">4</option>
-                                      <option value="5">5</option>
-                                      <option value="6">6</option>
-                                      <option value="7">7</option>
-                                      <option value="8">8</option>
-                                      <option value="9">9</option>
-                                      <option value="10">10</option>
-                                    </select>
+                              <h5> Add room</h5>
+                                <div class="rooms">
+                                  <button class="info form-select" onclick="open_addnew()">
+                                    <i class="fa-regular fa-user"></i>
+                                    <span> 3 adults  </span>
+                                    <span> 3 children  </span>
+                                    <span> 3 rooms  </span>
+                                  </button>
+                                  <div class="add_new" id="add_new">
+                                    <div class="form-group counter">
+                                      <label>adults</label>
+                                      <div class="input-group counter_content">
+                                          <div class="input-group-btn">
+                                              <button id="down" class=" btn btn-default" onclick=" adultdown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                          </div>
+                                          <input type="text" id="adultsNumber" class="form-control input-number" value="0" disabled />
+                                          <div class="input-group-btn">
+                                              <button id="up" class="btn btn-default" onclick="adultup('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-group counter">
+                                      <label>children</label>
+                                      <div class="input-group counter_content">
+                                          <div class="input-group-btn">
+                                              <button id="down" class="btn btn-default" onclick=" childdown('0') ; removeYearsSelect() " ><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                          </div>
+                                          <input type="text" id="childNumber" class="form-control input-number" value="0" onchange="addYearsSelect()" disabled />
+                                          <div class="input-group-btn">
+                                              <button id="up" class="btn btn-default" onclick="childup('10'); addYearsSelect()"  ><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                          </div>
+                                      </div>
+                                     
+                                    </div>
+                                    <div id="years">
+
+                                    </div>
+                                    <div class="form-group counter">
+                                      <label>rooms</label>
+                                      <div class="input-group counter_content">
+                                          <div class="input-group-btn">
+                                              <button id="down" class="btn btn-default" onclick=" roomdown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                          </div>
+                                          <input type="text" id="roomsNumber" class="form-control input-number" value="0" disabled />
+                                          <div class="input-group-btn">
+                                              <button id="up" class="btn btn-default" onclick="roomup('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <button class="btn done_button"> Done </button>
                                   </div>
-                                  <div class="col-xl-6 col-md-12 col-sm-12">
-                                    <h5> childs</h5>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>1</option>
-                                        <option value="1">2 </option>
-                                        <option value="2"> 3</option>
-                                        <option value="3">4</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                      </select>
-                                    </div>
-                              </div>  
-                            </div>
-                      
-                            <!-- <div class="col-sm-12 col-md-6 col-xl-2">
-                                <div id="adults">
-                              
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xl-2">
-                                <div class="childs">
-                               
-                            </div> -->
-
-                            <div class="col-sm-12 col-md-6 col-xl-1 p-0">
-                                <div class="main" id="room_main">
-                                    <div class="">
-                                      <button id="roomBtn" onclick="addInput()">
-                                        <i class="fa-solid fa-circle-plus"></i>
-                                        Add room
-                                      </button>
-
-                                        <!-- <a href="#">
-                                          <i class="fa-solid fa-circle-plus"></i>
-                                            Add room
-                                        </a> -->
-                                    </div>
-
-                                    <button class="btn">
-                                        <a href="#"> search</a>
-                                    </button>
                                 </div>
-                            </div>
+                                
+                            </div> 
+                            <div class="col-sm-12 col-md-6 col-xl-1 p-0 ">
+                              <div class="main" id="room_main">
+                                  <button class="btn">
+                                      <a href="#"> search</a>
+                                  </button>
+                              </div>
+                           </div>
+                            
+                          </div>
+
+                           
                         </div>
-                    </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="hotel_details">
@@ -308,51 +313,68 @@
                               <option value="10">10</option>
                             </select>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-xl-2">
-                          <h5> adults</h5>
-                          <select class="form-select" aria-label="Default select example">
-                              <option selected>1</option>
-                              <option value="1">2 </option>
-                              <option value="2"> 3</option>
-                              <option value="3">4</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-xl-2">
-                          <h5> childs</h5>
-                          <select class="form-select" aria-label="Default select example">
-                              <option selected>1</option>
-                              <option value="1">2 </option>
-                              <option value="2"> 3</option>
-                              <option value="3">4</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-xl-1 p-0">
-                          <div class="main">
-                              <div class="">
-                                  <a href="#">
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                      Add room
-                                  </a>
+                      <div class="col-sm-12 col-md-6 col-xl-4">
+                        <h5> Add room</h5>
+                          <div class="rooms">
+                            <button class="info form-select" onclick="open_tabaddnew()">
+                              <i class="fa-regular fa-user"></i>
+                              <span> 3 adults  </span>
+                              <span> 3 children  </span>
+                              <span> 3 rooms  </span>
+                            </button>
+                            <div class="add_new" id="tab_add_new">
+                              <div class="form-group counter">
+                                <label>adults</label>
+                                <div class="input-group counter_content">
+                                    <div class="input-group-btn">
+                                        <button id="down" class=" btn btn-default" onclick=" tabadultdown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                    </div>
+                                    <input type="text" id="tabAdultsNumber" class="form-control input-number" value="0" disabled/>
+                                    <div class="input-group-btn">
+                                        <button id="up" class="btn btn-default" onclick="tabAdultTop('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                    </div>
+                                </div>
                               </div>
-                              <button class="btn">
-                                  <a href="#"> search</a>
-                              </button>
+                              <div class="form-group counter">
+                                <label>children</label>
+                                <div class="input-group counter_content">
+                                    <div class="input-group-btn">
+                                        <button id="down" class="btn btn-default" onclick=" tabChilddown('0') ; removeTabYearsSelect() " ><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                    </div>
+                                    <input type="text" id="tabChildNumber" class="form-control input-number" value="0" onchange="addTabYearsSelect()" disabled />
+                                    <div class="input-group-btn">
+                                        <button id="up" class="btn btn-default" onclick="tabChildUp('10'); addTabYearsSelect()"  ><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                    </div>
+                                </div>
+                               
+                              </div>
+                              <div id="tabYears">
+
+                              </div>
+                              <div class="form-group counter">
+                                <label>rooms</label>
+                                <div class="input-group counter_content">
+                                    <div class="input-group-btn">
+                                        <button id="down" class="btn btn-default" onclick=" tabRoomDown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                    </div>
+                                    <input type="text" id="tabRoomsNumber" class="form-control input-number" value="0" disabled />
+                                    <div class="input-group-btn">
+                                        <button id="up" class="btn btn-default" onclick="tabRoomUp('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                    </div>
+                                </div>
+                              </div>
+                              <button class="btn done_button"> Done </button>
+                            </div>
                           </div>
-                      </div>
+                          
+                      </div> 
+                      <div class="col-sm-12 col-md-6 col-xl-1 p-0 ">
+                        <div class="main" id="room_main">
+                            <button class="btn">
+                                <a href="#"> search</a>
+                            </button>
+                        </div>
+                     </div>
                   </div>
                 </div>
                 </div>
@@ -396,51 +418,68 @@
                               <option value="10">10</option>
                             </select>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-xl-2">
-                          <h5> adults</h5>
-                          <select class="form-select" aria-label="Default select example">
-                              <option selected>1</option>
-                              <option value="1">2 </option>
-                              <option value="2"> 3</option>
-                              <option value="3">4</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-xl-2">
-                          <h5> childs</h5>
-                          <select class="form-select" aria-label="Default select example">
-                              <option selected>1</option>
-                              <option value="1">2 </option>
-                              <option value="2"> 3</option>
-                              <option value="3">4</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                            </select>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-xl-1 p-0">
-                          <div class="main">
-                              <div class="">
-                                  <a href="#">
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                      Add room
-                                  </a>
+                      <div class="col-sm-12 col-md-6 col-xl-4">
+                        <h5> Add room</h5>
+                          <div class="rooms">
+                            <button class="info form-select" onclick="open_traveladdnew()">
+                              <i class="fa-regular fa-user"></i>
+                              <span> 3 adults  </span>
+                              <span> 3 children  </span>
+                              <span> 3 rooms  </span>
+                            </button>
+                            <div class="add_new" id="travel_add_new">
+                              <div class="form-group counter">
+                                <label>adults</label>
+                                <div class="input-group counter_content">
+                                    <div class="input-group-btn">
+                                        <button id="down" class=" btn btn-default" onclick=" travelAdultDown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                    </div>
+                                    <input type="text" id="travelAdultsNumber" class="form-control input-number" value="0"  disabled/>
+                                    <div class="input-group-btn">
+                                        <button id="up" class="btn btn-default" onclick="travelAdulTop('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                    </div>
+                                </div>
                               </div>
-                              <button class="btn">
-                                  <a href="#"> search</a>
-                              </button>
+                              <div class="form-group counter">
+                                <label>children</label>
+                                <div class="input-group counter_content">
+                                    <div class="input-group-btn">
+                                        <button id="down" class="btn btn-default" onclick=" travelChildDown('0') ; removeTravelYearsSelect() " ><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                    </div>
+                                    <input type="text" id="travelChildNumber" class="form-control input-number" value="0" onchange="addTravelYearsSelect()" disabled />
+                                    <div class="input-group-btn">
+                                        <button id="up" class="btn btn-default" onclick="travelChildUp('10'); addTravelYearsSelect()"  ><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                    </div>
+                                </div>
+                               
+                              </div>
+                              <div id="travelYears">
+
+                              </div>
+                              <div class="form-group counter">
+                                <label>rooms</label>
+                                <div class="input-group counter_content">
+                                    <div class="input-group-btn">
+                                        <button id="down" class="btn btn-default" onclick=" travelRoomDown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                                    </div>
+                                    <input type="text" id="travelRoomsNumber" class="form-control input-number" value="0" disabled />
+                                    <div class="input-group-btn">
+                                        <button id="up" class="btn btn-default" onclick="travelRoomUp('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                                    </div>
+                                </div>
+                              </div>
+                              <button class="btn done_button"> Done </button>
+                            </div>
                           </div>
-                      </div>
+                          
+                      </div> 
+                      <div class="col-sm-12 col-md-6 col-xl-1 p-0 ">
+                        <div class="main" id="room_main">
+                            <button class="btn">
+                                <a href="#"> search</a>
+                            </button>
+                        </div>
+                     </div>
                   </div>
                     </div>
                 </div>
@@ -460,8 +499,8 @@
                               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CVN2">
                             </div>
                       
-                            <div class="col-xl-2 col-md-12 col-sm-12">
-                                <div class="main">
+                            <div class="col-xl-2 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                                <div class="main w-100">
                                     <button class="btn">
                                         <a href="#"> pay </a>
                                     </button>
@@ -493,9 +532,21 @@
                 <div class=" card explore_main">
                   <div class="card-body explore_card place_1 ">
                     <div class="header_info">
-                     <h5><a href="#" class="stretched-link">turkey</a>
+                     <h5><a href="#" >turkey</a>
                       </h5>
                       <span>896 properties</span>
+                      <div class="explore_links">
+                        <button class="btn ">
+                         <a href="./hotel.html">
+                          <i class="fa-solid fa-hotel"></i>
+                         </a>
+                        </button>
+                        <button class="btn ">
+                          <a href="./tours.html">
+                            <i class="fa-solid fa-plane"></i>
+                          </a>
+                         </button>
+                      </div>
                     </div>
                 </div> 
               </div>
@@ -504,10 +555,23 @@
                 <div class=" card">
                   <div class="card-body explore_card place_2 ">
                     <div class="header_info">
-                     <h5><a href="#" class="stretched-link">turkey</a>
+                     <h5><a href="#" >turkey</a>
                       </h5>
                       <span>896 properties</span>
+                      <div class="explore_links">
+                        <button class="btn ">
+                         <a href="./hotel.html">
+                          <i class="fa-solid fa-hotel"></i>
+                         </a>
+                        </button>
+                        <button class="btn ">
+                          <a href="./tours.html">
+                            <i class="fa-solid fa-plane"></i>
+                          </a>
+                         </button>
+                      </div>
                     </div>
+                  
                 </div> 
               </div>
               </div>
@@ -518,6 +582,18 @@
                      <h5><a href="#" class="stretched-link">turkey</a>
                       </h5>
                       <span>896 properties</span>
+                      <div class="explore_links">
+                        <button class="btn ">
+                         <a href="./hotel.html">
+                          <i class="fa-solid fa-hotel"></i>
+                         </a>
+                        </button>
+                        <button class="btn ">
+                          <a href="./tours.html">
+                            <i class="fa-solid fa-plane"></i>
+                          </a>
+                         </button>
+                      </div>
                     </div>
                 </div> 
               </div>
@@ -529,6 +605,18 @@
                       <h5><a href="#" class="stretched-link">turkey</a>
                       </h5>
                       <span>896 properties</span>
+                      <div class="explore_links">
+                        <button class="btn ">
+                         <a href="./hotel.html">
+                          <i class="fa-solid fa-hotel"></i>
+                         </a>
+                        </button>
+                        <button class="btn ">
+                          <a href="./tours.html">
+                            <i class="fa-solid fa-plane"></i>
+                          </a>
+                         </button>
+                      </div>
                     </div>
                 </div> 
               </div>
@@ -540,6 +628,18 @@
                       <h5><a href="#" class="stretched-link">turkey</a>
                       </h5>
                       <span>896 properties</span>
+                      <div class="explore_links">
+                        <button class="btn ">
+                         <a href="./hotel.html">
+                          <i class="fa-solid fa-hotel"></i>
+                         </a>
+                        </button>
+                        <button class="btn ">
+                          <a href="./tours.html">
+                            <i class="fa-solid fa-plane"></i>
+                          </a>
+                         </button>
+                      </div>
                     </div>
                 </div> 
               </div>
@@ -551,6 +651,18 @@
                       <h5><a href="#" class="stretched-link">turkey</a>
                       </h5>
                       <span>896 properties</span>
+                      <div class="explore_links">
+                        <button class="btn ">
+                         <a href="./hotel.html">
+                          <i class="fa-solid fa-hotel"></i>
+                         </a>
+                        </button>
+                        <button class="btn ">
+                          <a href="./tours.html">
+                            <i class="fa-solid fa-plane"></i>
+                          </a>
+                         </button>
+                      </div>
                     </div>
                 </div> 
               </div>
@@ -1463,6 +1575,7 @@
   <!-- bootstrap 5.0v scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script> -->
   <!-- jquery library -->
   <script src="  https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <!-- date picker range links -->
@@ -1480,7 +1593,7 @@
 <!-- signle date picker -->
   <script src="./js/momnet.js"></script>
   <script src="./js/bootstrap-datepicker.min.js"></script>
-  <script src="./js/date_picker.js"></script>
+  <!-- <script src="./js/date_picker.js"></script> -->
 
   <!-- Slick.s library -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -1493,6 +1606,7 @@
 
   <!-- GRT Youtube Popup -->
   <script src="http://dimsemenov.com/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
   <script>
    
    $(document).ready(function() {
@@ -1504,6 +1618,6 @@
  
   <!-- adding room -->
   <script src="./js/add_room.js"></script>
-
+  <script src="./js/adding_years_Select.js"></script>
 </body>
 </html>

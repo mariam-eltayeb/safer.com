@@ -95,6 +95,9 @@
                 <button class="offcan_buttons">
                   <a href="./sign-up.html">Sign up</a>
                 </button>
+                <button class="offcan_buttons">
+                  <a href="#">language-Arabic</a>
+                </button>
           </div>
         </div>
           <!-- end of oofcanvas  -->
@@ -134,6 +137,9 @@
                 </li>
               </ul>
             </div>
+            <li class="language">
+              <a href = "#" class="links hybrid"><i class="fa-solid fa-globe"></i></a>
+            </li>
           </ul>
         </div>
           <!-- end of navigation links  -->
@@ -513,7 +519,9 @@
                     <div class="col-xl-3 col-sm-12 col-md-6">
                         <div class="avaliable">
                             <span> avaliable</span>
-                            <span><a href="#">Cancellation Policy</a></span>
+                            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatem?">
+                              Cancelartion Policy
+                              </button>
                         </div>
                     </div>
                     <div class="col-xl-2 col-sm-12 col-md-6">
@@ -547,7 +555,9 @@
                   <div class="col-xl-3 col-sm-12 col-md-6">
                       <div class="avaliable">
                           <span> avaliable</span>
-                          <span><a href="#">Cancellation Policy</a></span>
+                          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatem?">
+                              Cancelartion Policy
+                              </button>
                       </div>
                   </div>
                   <div class="col-xl-2 col-sm-12 col-md-6">
@@ -581,7 +591,9 @@
                 <div class="col-xl-3 col-sm-12 col-md-6">
                     <div class="avaliable">
                       <span class="request"> on request </span>
-                        <span><a href="#">Cancellation Policy</a></span>
+                        <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatem?">
+                              Cancelartion Policy
+                              </button>
                     </div>
                 </div>
                 <div class="col-xl-2 col-sm-12 col-md-6">
@@ -615,7 +627,9 @@
               <div class="col-xl-3 col-sm-12 col-md-6">
                   <div class="avaliable">
                       <span> avaliable</span>
-                      <span><a href="#">Cancellation Policy</a></span>
+                      <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatem?">
+                              Cancelartion Policy
+                              </button>
                   </div>
               </div>
               <div class="col-xl-2 col-sm-12 col-md-6">
@@ -649,7 +663,9 @@
               <div class="col-xl-3 col-sm-12 col-md-6">
                   <div class="avaliable">
                       <span class="request"> on request </span>
-                      <span><a href="#">Cancellation Policy</a></span>
+                      <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatem?">
+                              Cancelartion Policy
+                              </button>
                   </div>
               </div>
               <div class="col-xl-2 col-sm-12 col-md-6">
@@ -879,7 +895,7 @@
     </footer>
   </section>
   <!-- footer -->
- 
+
   <!-- copy right section -->
   <div class="copyright">
     <h6>All copyrights reserved to website 2021 </h6>
@@ -926,5 +942,12 @@
    });
  
   </script>
+<SCript>
+ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</SCript>
+ 
 </body>
 </html>
