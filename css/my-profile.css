@@ -339,9 +339,9 @@ text-transform: none;
     z-index: 9999999 !important;
     display: none;
 }
-/* .show {
+.show {
     display: block;
-} */
+}
 @media (min-width:320px) and (max-width:767px) {
     .payment_option .visa_info .visa {
         flex-wrap: wrap;

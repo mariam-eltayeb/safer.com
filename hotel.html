@@ -202,57 +202,73 @@
                   </select>
             </div>
             <div class="col-sm-12 col-md-6 col-xl-4">
-              <div class="row mx-0 " id="details">
-                <div class="col-xl-6 col-md-12 col-sm-12 ">
-                  
-                  <h5> adults</h5>
-                  <select class="form-select" aria-label="Default select example">
-                      <option selected>1</option>
-                      <option value="1">2 </option>
-                      <option value="2"> 3</option>
-                      <option value="3">4</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                  <div class="col-xl-6 col-md-12 col-sm-12">
-                    <h5> childs</h5>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>1</option>
-                        <option value="1">2 </option>
-                        <option value="2"> 3</option>
-                        <option value="3">4</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                      </select>
-                    </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-1 p-0">
-              <div class="main" id="room_main">
-                <div class="">
-                  <button id="roomBtn" onclick="addInput()">
-                    <i class="fa-solid fa-circle-plus"></i>
-                    Add room
+              <h5> Add room</h5>
+                <div class="rooms">
+                  <button class="info form-select" onclick="open_hoteladdnew()">
+                    <i class="fa-regular fa-user"></i>
+                    <span> <span id="hotel_adults_number"> 0</span> adults  </span>
+                    <span> <span id="hotel_child_number">0</span>children  </span>
+                    <span> <span id="hotel_rooms_number">0</span> rooms  </span>
                   </button>
+                  <div class="add_new" id="hotel_add_new">
+                    <div class="form-group counter">
+                      <label>adults</label>
+                      <div class="input-group counter_content">
+                          <div class="input-group-btn">
+                              <button id="hoteladultdown" class=" btn btn-default" onclick=" hoteladultdown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                          </div>
+                          <input type="text" id="hoteladultsNumber" class="form-control input-number" value="0" disabled />
+                          <div class="input-group-btn">
+                              <button id="hoteladultup" class="btn btn-default" onclick="hoteladultup('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group counter">
+                      <label>children</label>
+                      <div class="input-group counter_content">
+                          <div class="input-group-btn">
+                              <button id="hotelchilddown" class="btn btn-default" onclick=" hotelchilddown('0') ; removeHotelYearsSelect() " ><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                          </div>
+                          <input type="text" id="hotelchildNumber" class="form-control input-number" value="0" onchange="addHotelYearsSelect()" disabled />
+                          <div class="input-group-btn">
+                              <button id="hotelchildup" class="btn btn-default" onclick="hotelchildup('10'); addHotelYearsSelect()"  ><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                          </div>
+                      </div>
+                     
+                    </div>
+                    <div id="hotelyears">
+
+                    </div>
+                    <div class="form-group counter">
+                      <label>rooms</label>
+                      <div class="input-group counter_content">
+                          <div class="input-group-btn">
+                              <button id="hotelroomsdown" class="btn btn-default" onclick=" hotelroomsdown('0')"><span class="glyphicon glyphicon-minus"> <i class="fa-solid fa-minus"></i></span></button>
+                          </div>
+                          <input type="text" id="hotelroomsNumber" class="form-control input-number" value="0" disabled />
+                          <div class="input-group-btn">
+                              <button id="hotelroomsup" class="btn btn-default" onclick="hotelroomsup('10')"><span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span></button>
+                          </div>
+                      </div>
+                    </div>
+                    <button class="btn done_button" onclick="hotelDeclateNumbers()" > Done </button>
+               
+                  </div>
                 </div>
-                <button class="btn">
-                    <a href="#"> search</a>
-                </button>
-            </div>
-            </div>
-        </div>
-    </div>     
+                
+            </div> 
+            <div class="col-sm-12 col-md-6 col-xl-1 p-0 ">
+              <div class="main" id="room_main">
+                  <button class="btn">
+                      <a href="#"> search</a>
+                  </button>
+              </div>
+           </div>
+            
+          </div>
+
+           
+    </div> 
     </section>
 
   <section class="tours container" id="hotel_search">
@@ -1082,5 +1098,7 @@
 
   <!-- add room  button-->
   <script src="./js/add_room.js"></script>
+  <!-- adding years selection -->
+  <script src="./js/adding_years_Select.js"></script>
 </body>
 </html>

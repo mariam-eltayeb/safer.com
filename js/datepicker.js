@@ -1,7 +1,7 @@
 $('.demo').daterangepicker({
-    "showISOWeekNumbers": true,
-    "timePicker": false,
-    "autoUpdateInput": true,
+    // "showISOWeekNumbers": true,
+    // "timePicker": false,
+    // "autoUpdateInput": true,
     "locale": {
         "cancelLabel": 'Clear',
         "format": "MMMM DD, YYYY ",
@@ -35,11 +35,11 @@ $('.demo').daterangepicker({
             "Nov.",
             "Dec."
         ],
-        "firstDay": 1
+        // "firstDay": 1
     },
     "linkedCalendars": true,
     "showCustomRangeLabel": false,
-    "startDate": 1,
-    "endDate": "December 31, 2016 @ h:mm A",
+    "startDate": "December 2 , 2022",
+    "endDate": "December 31, 2022 @ h:mm A",
     "opens": "center"
 });

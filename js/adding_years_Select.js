@@ -127,17 +127,21 @@ function travelRoomDown(min) {
 // set dropdown 
 
 function open_addnew(){
-
+    // document.getElementById("add_new").style.opacity=1;
+    document.getElementById("add_new").style.display="block";
   document.getElementById("add_new").classList.toggle("show");
+
 }
 // open tab drop down 
 
 function open_tabaddnew(){
+    document.getElementById("tab_add_new").style.display="block";
     document.getElementById("tab_add_new").classList.toggle("show");
 }
 
 //  open travel tab 
 function open_traveladdnew(){
+    document.getElementById("travel_add_new").style.display="block";
     document.getElementById("travel_add_new").classList.toggle("show");
 }
 
@@ -230,3 +234,116 @@ function removeTravelYearsSelect(){
     travelyearsValue = travelyearInput.value;
     $('#travelYears select').last().remove();
 }
+
+// adding the declarative numbers selected inn  html input 
+
+var adultsNumberSpan = document.getElementById('adults_number');
+var childNumberSpan = document.getElementById('child_number');
+var roomNumberSpan = document.getElementById('rooms_number');
+
+function declateNumbers() {
+    adultsNumberSpan.innerHTML= document.getElementById("adultsNumber").value;
+    childNumberSpan.innerHTML = document.getElementById("childNumber").value;
+    roomNumberSpan.innerHTML = document.getElementById("roomsNumber").value;
+    document.getElementById("add_new").style.display="none";
+
+    // tab tab
+    document.getElementById('tab_adults_number').innerHTML= document.getElementById("tabAdultsNumber").value;
+    document.getElementById('tab_child_number').innerHTML = document.getElementById("tabChildNumber").value;
+    document.getElementById('tab_rooms_number').innerHTML = document.getElementById("tabRoomsNumber").value;
+    document.getElementById("tab_add_new").style.display="none";
+
+    // travel tab 
+    document.getElementById('travel_adults_number').innerHTML= document.getElementById("travelAdultsNumber").value;
+    document.getElementById('travel_child_number').innerHTML = document.getElementById("travelChildNumber").value;
+    document.getElementById('travel_rooms_number').innerHTML = document.getElementById("travelRoomsNumber").value;
+    document.getElementById("travel_add_new").style.display="none";
+}   
+
+//**************************************************************************************************** */
+// hotel page 
+
+function hoteladultup(max) {
+    document.getElementById("hoteladultsNumber").value = parseInt(document.getElementById("hoteladultsNumber").value) + 1;
+    if (document.getElementById("hoteladultsNumber").value >= parseInt(max)) {
+        document.getElementById("hoteladultsNumber").value = max;
+    }
+}
+function hoteladultdown(min) {
+    document.getElementById("hoteladultsNumber").value = parseInt(document.getElementById("hoteladultsNumber").value) - 1;
+    if (document.getElementById("hoteladultsNumber").value <= parseInt(min)) {
+        document.getElementById("hoteladultsNumber").value = min;
+    }
+}
+// hotel cild 
+function hotelchildup(max) {
+    document.getElementById("hotelchildNumber").value = parseInt(document.getElementById("hotelchildNumber").value) + 1;
+    if (document.getElementById("hotelchildNumber").value >= parseInt(max)) {
+        document.getElementById("hotelchildNumber").value = max;
+    }
+}
+function hotelchilddown(min) {
+    document.getElementById("hotelchildNumber").value = parseInt(document.getElementById("hotelchildNumber").value) - 1;
+    if (document.getElementById("hotelchildNumber").value <= parseInt(min)) {
+        document.getElementById("hotelchildNumber").value = min;
+    }
+}
+// hotel rooms number
+function hotelroomsup(max) {
+    document.getElementById("hotelroomsNumber").value = parseInt(document.getElementById("hotelroomsNumber").value) + 1;
+    if (document.getElementById("hotelroomsNumber").value >= parseInt(max)) {
+        document.getElementById("hotelroomsNumber").value = max;
+    }
+}
+function hotelroomsdown(min) {
+    document.getElementById("hotelroomsNumber").value = parseInt(document.getElementById("hotelroomsNumber").value) - 1;
+    if (document.getElementById("hotelroomsNumber").value <= parseInt(min)) {
+        document.getElementById("hotelroomsNumber").value = min;
+    }
+}
+
+//  open travel tab 
+function open_hoteladdnew(){
+    document.getElementById("hotel_add_new").style.display="block";
+    document.getElementById("hotel_add_new").classList.toggle("show_hotel");
+}
+
+// Home tab  adding years select 
+var yearSelect = document.getElementById("hotelyears");
+var yearInput =document.getElementById('hotelchildNumber');
+var yearsValue;
+
+function addHotelYearsSelect(){
+    yearsValue = yearInput.value;
+    var years = ` 
+      <select class="form-select" aria-label="Default select example">\n\
+          <option value="1" selected> 1 years old </option>\n\
+          <option value="2"> 2 years old</option>\n\
+          <option value="3">3 years old</option>\n\
+          <option value="4">4 years old </option>\n\
+          <option value="5">5 years old</option>\n\
+          <option value="6">6 years old</option>\n\
+          <option value="7">7 years old</option>\n\
+          <option value="8">8 years old</option>\n\
+          <option value="9">9 years old</option>\n\
+          <option value="10">10 years old</option>\n\
+        </select>\n\
+     `
+     yearSelect.insertAdjacentHTML ('beforeend',years);
+}
+
+function removeHotelYearsSelect(){
+    yearsValue = yearInput.value;
+    $('#hotelyears select').last().remove();
+}
+
+
+function hotelDeclateNumbers() {
+
+    document.getElementById('hotel_adults_number').innerHTML= document.getElementById("hoteladultsNumber").value;
+    document.getElementById('hotel_child_number').innerHTML = document.getElementById("hotelchildNumber").value;
+    document.getElementById('hotel_rooms_number').innerHTML = document.getElementById("hotelroomsNumber").value;
+    document.getElementById("hotel_add_new").style.display="none";
+    // document.getElementById("hotel_add_new").style.backgroundColor="red";
+
+}   

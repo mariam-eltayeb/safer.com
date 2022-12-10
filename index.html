@@ -211,9 +211,9 @@
                                 <div class="rooms">
                                   <button class="info form-select" onclick="open_addnew()">
                                     <i class="fa-regular fa-user"></i>
-                                    <span> 3 adults  </span>
-                                    <span> 3 children  </span>
-                                    <span> 3 rooms  </span>
+                                    <span> <span id="adults_number"> 0</span> adults  </span>
+                                    <span> <span id="child_number">0</span>children  </span>
+                                    <span> <span id="rooms_number">0</span> rooms  </span>
                                   </button>
                                   <div class="add_new" id="add_new">
                                     <div class="form-group counter">
@@ -256,7 +256,8 @@
                                           </div>
                                       </div>
                                     </div>
-                                    <button class="btn done_button"> Done </button>
+                                    <button class="btn done_button" onclick="declateNumbers()" data-bs-dismiss="modal"> Done </button>
+                               
                                   </div>
                                 </div>
                                 
@@ -272,7 +273,7 @@
                           </div>
 
                            
-                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="hotel_details">
@@ -318,9 +319,9 @@
                           <div class="rooms">
                             <button class="info form-select" onclick="open_tabaddnew()">
                               <i class="fa-regular fa-user"></i>
-                              <span> 3 adults  </span>
-                              <span> 3 children  </span>
-                              <span> 3 rooms  </span>
+                              <span> <span id="tab_adults_number"> 0</span> adults  </span>
+                              <span> <span id="tab_child_number">0</span>children  </span>
+                              <span> <span id="tab_rooms_number">0</span> rooms  </span>
                             </button>
                             <div class="add_new" id="tab_add_new">
                               <div class="form-group counter">
@@ -363,7 +364,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <button class="btn done_button"> Done </button>
+                              <button class="btn done_button" onclick="declateNumbers()"> Done </button>
                             </div>
                           </div>
                           
@@ -423,9 +424,9 @@
                           <div class="rooms">
                             <button class="info form-select" onclick="open_traveladdnew()">
                               <i class="fa-regular fa-user"></i>
-                              <span> 3 adults  </span>
-                              <span> 3 children  </span>
-                              <span> 3 rooms  </span>
+                              <span> <span id="travel_adults_number"> 0</span> adults  </span>
+                              <span> <span id="travel_child_number">0</span>children  </span>
+                              <span> <span id="travel_rooms_number">0</span> rooms  </span>
                             </button>
                             <div class="add_new" id="travel_add_new">
                               <div class="form-group counter">
@@ -468,7 +469,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <button class="btn done_button"> Done </button>
+                              <button class="btn done_button"onclick="declateNumbers()"> Done </button>
                             </div>
                           </div>
                           
