@@ -23,8 +23,8 @@
 .hotel_details{
     box-shadow: 0px 3px 6px #00000029;
     background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+   	border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
     padding: 10px 20px;
 }
 .hotel_details h5 {
@@ -40,8 +40,8 @@ margin-top: 30px;
 .rooms_info {
     box-shadow: 0px 3px 6px #00000029;
     background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+   	border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
     padding: 30px 27px;
     margin-bottom: 15px;
 }
@@ -118,13 +118,13 @@ margin-top: 30px;
 .rooms_search img:first-of-type {
     position: absolute;
     top: -60px;
-    left: 0px;
+    right: 0px;
     width: 100%;
 }
 .rooms_search img:nth-of-type(2) {
     position: absolute;
     bottom: -30px;
-    left: 0px;
+    right: 0px;
     width: 100%;
 }
 .slider_section .slider_details h1 {
@@ -142,7 +142,7 @@ text-transform: capitalize;
     border-radius: 20px;
     position: absolute;
     bottom: 10%;
-    left: 35%;
+    right: 35%;
 }
 .map_button a {
     color: #68C2E5;
@@ -163,7 +163,7 @@ text-transform: capitalize;
 @media (min-width: 320px) and (max-width: 420px) {
 
     .map_button {
-        left: 25%;
+        right: 25%;
         width: 140px;
     }
 }
